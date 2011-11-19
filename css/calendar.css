@@ -1,0 +1,93 @@
+.calendar-placeholder {
+    width: 640px;
+    margin: 0 auto;
+    padding: 30px 0 15px;
+    position: relative;
+}
+
+    .calendar-placeholder button.prev,
+    .calendar-placeholder button.next {
+        position: absolute;
+        top: 30px;
+        width: 24px;
+        height: 24px;
+        background-color: #fff;
+        border: 0px;
+        border-radius: 50%;
+        box-shadow: inset 0 -3px 5px #f5f5f5, 0 0 2px #c0c0c0;
+    }
+    .calendar-placeholder button.prev {
+        left: -30px;
+    }
+    .calendar-placeholder button.next {
+        right: -40px;
+    }
+
+    .calendar-placeholder button.prev[disabled],
+    .calendar-placeholder button.next[disabled] {
+        opacity: 0.3;
+    }
+
+.calendar {
+    width: 305px;
+    display: inline-block;
+    font-size: 13px;
+    margin: 0 -20px 0 10px;
+}
+    .calendar b {
+        font-size: 11px;
+        text-align: center;
+        display: block;
+        margin: 0 0 20px -20px;
+        text-transform: uppercase;
+    }
+
+    .calendar abbr,
+    .calendar time {
+        display: inline-block;
+        height: 30px;
+        width: 40px;
+        text-align: center;
+        margin: 1px -3px 0 0;
+        line-height: 30px;
+        color: #999;
+    }
+
+    .calendar abbr:nth-child(7),
+    .calendar abbr:nth-child(8),
+    .calendar time:nth-child(14),
+    .calendar time:nth-child(15),
+    .calendar time:nth-child(21),
+    .calendar time:nth-child(22),
+    .calendar time:nth-child(28),
+    .calendar time:nth-child(29),
+    .calendar time:nth-child(35),
+    .calendar time:nth-child(36),
+    .calendar time:nth-child(42),
+    .calendar time:nth-child(43) {
+        color: #eb413c;
+    }
+
+    .calendar time {
+        background-color: #fbfbfb;
+        color: #666;
+        font-weight: bold;
+    }
+    .calendar time[datetime] {
+        background-color: #fff;
+    }
+    .calendar time.disabled {
+        color: #dcdcdc;
+    }
+    .calendar time.today {
+        color: #000;
+    }
+
+    .calendar time.from,
+    .calendar time.to {
+        border: 1px solid #bcbebf;
+        margin: 0px -4px -2px -1px;
+        text-indent: -19px;
+        font-size: 10px;
+        vertical-align: top;
+    }

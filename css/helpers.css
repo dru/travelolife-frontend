@@ -1,0 +1,19 @@
+.fr {
+    float: right;
+}
+
+.fl {
+    float: left;
+}
+
+.w600 {
+    width: 600px;
+}
+
+.tac {
+    text-align: center;
+}
+
+.pr {
+    position: relative;
+}

@@ -1,0 +1,452 @@
+<!doctype html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="css/all.css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script>
+        // replace me with framework
+        window.$ = function(a){
+            return document.getElementById(a);
+        };
+    </script>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <a id="logo" href="#">&nbsp;</a>
+
+            <div class="top-menu right-menu">
+                <a href="#">О проекте</a>
+                <a href="#">Вопросы и ответы</a>
+                <br/>
+                <small>Служба поддержки</small><br/>
+                <b>0 800 423 00 77</b>
+            </div>
+
+            <nav>
+                <div class="top-menu">
+                    <a href="#" id="nav-sign-in">Вход</a>
+                    <a href="#" id="nav-registration">Регистрация</a>
+                    <a href="#" class="lang active">Рус</a>
+                    <a href="#" class="lang">Eng</a>
+                </div>
+                <a href="#" class="active">Билеты</a>
+                <a href="#">Авиакомпании</a>
+                <a href="#">Самолеты</a>
+                <a href="#">Аэропорты</a>
+            </nav>
+        </div>
+    </header>
+    <form class="search-form">
+        <div class="gray">
+            <div class="wrapper">
+                <h2>Поиск авиабилетов</h2>
+                <div class="tac pr">
+                    <div class="direction">
+                        <input type="text" class="big" placeholder="откуда" tabindex="1"/>
+                        <!-- TODO: magnifier button should have search handler -->
+                        <button class="form-magnifier">&nbsp;</button>
+                        <br/><a href="#" class="shortcut" data-value="Киев">Киев</a>
+                    </div>
+
+                    <div class="toggler">
+                        <!-- be careful with deleting description node, nth-child rule applied in css-->
+                        <div class="description" id="form-path-value">&nbsp;</div>
+                        <input id="form-from" type="radio" name="type" data-value="только туда" tabindex="2"/><input id="form-from-to" type="radio" name="type" data-value="туда и обратно" tabindex="2"/><input id="form-to-to" type="radio" name="type" data-value="наборной маршрут" tabindex="2"/>
+                    </div>
+
+                    <div class="direction right">
+                        <input type="text" class="big" placeholder="куда"  tabindex="3"/>
+                        <!-- TODO: magnifier button should have search handler -->
+                        <button class="form-magnifier">&nbsp;</button>
+                        <br/><a href="#" class="shortcut" data-value="Барселона">Барселона</a>
+                    </div>
+
+                    <script>
+                    // proof of concept
+                    (function(){
+                        function handler(){
+                            $('form-path-value').innerHTML = this.getAttribute('data-value');
+                        }
+                        $('form-from').onclick = handler;
+                        $('form-from-to').onclick = handler;
+                        $('form-to-to').onclick = handler;
+                    }());
+                    </script>
+                </div>
+            </div>
+        </div>
+
+<!-- PUT DISPLAY BLOCK -->
+        <div class="gray step2" style="display: none;">
+            <hr />
+            <div class="wrapper">
+                <div class="step2-title-wrapper">
+                    <div class="gray step2-title">
+                        <span>Санкт-Петербург</span>
+                        <i class="icon-airplane">&nbsp;</i>
+                        <span>Киев</span>
+                    </div>
+                </div>
+                <div class="fl">
+                    <div>
+                        <label id="c1" class="checked"><input type="checkbox" id="c1c" checked="checked"/>прямые рейсы</label>
+                        <br/>
+                        <label id="c2"><input type="checkbox" id="c2c" />с пересадкой</label>
+                        <script>
+                        (function(){
+                            function change(idLabel) {
+                                return function() {
+                                    $(idLabel).className = this.checked ? 'checked' : '';
+                                }
+                            }
+                            $('c1c').onchange = change('c1');
+                            $('c2c').onchange = change('c2');
+                        }());
+                        </script>
+                    </div>
+
+                    <p class="fastday">
+                        <span>Быстрый<br/>выбор даты:</span><br/>
+                        <a href="#" class="shortcut">Сегодня</a><br/>
+                        <a href="#" class="shortcut">Завтра</a>
+                    </p>
+                </div>
+                <div class="fr">
+                    <button class="close">закрыть</button>
+                </div>
+                <div class="calendar-placeholder">
+                    <button class="prev" disabled="disabled"></button>
+                    <button class="next"></button>
+                    <div class="calendar">
+                        <b>Сентябрь  2011</b>
+                        <abbr>Пн</abbr>
+                        <abbr>Вт</abbr>
+                        <abbr>Ср</abbr>
+                        <abbr>Чт</abbr>
+                        <abbr>Пт</abbr>
+                        <abbr>Сб</abbr>
+                        <abbr>Вс</abbr>
+                        <time>&nbsp;</time>
+                        <time>&nbsp;</time>
+                        <time>&nbsp;</time>
+                        <time class="disabled" datetime="2011-09-01">1</time>
+                        <time class="disabled" datetime="2011-09-02">2</time>
+                        <time class="disabled" datetime="2011-09-03">3</time>
+                        <time class="disabled" datetime="2011-09-04">4</time>
+                        <time class="disabled" datetime="2011-09-05">5</time>
+                        <time class="disabled" datetime="2011-09-06">6</time>
+                        <time class="disabled" datetime="2011-09-07">7</time>
+                        <time class="disabled" datetime="2011-09-08">8</time>
+                        <time class="disabled" datetime="2011-09-09">9</time>
+                        <time class="disabled" datetime="2011-09-10">10</time>
+                        <time class="disabled" datetime="2011-09-11">11</time>
+                        <time class="disabled" datetime="2011-09-12">12</time>
+                        <time class="disabled" datetime="2011-09-13">13</time>
+                        <time class="disabled" datetime="2011-09-14">14</time>
+                        <time class="disabled" datetime="2011-09-15">15</time>
+                        <time class="disabled" datetime="2011-09-16">16</time>
+                        <time class="disabled" datetime="2011-09-17">17</time>
+                        <time class="disabled" datetime="2011-09-18">18</time>
+                        <time class="disabled" datetime="2011-09-19">19</time>
+                        <time class="disabled" datetime="2011-09-20">20</time>
+                        <time datetime="2011-09-21" class="today">21</time>
+                        <time datetime="2011-09-22">22</time>
+                        <time datetime="2011-09-23">23</time>
+                        <time datetime="2011-09-24">24</time>
+                        <time datetime="2011-09-25" class="from">25</time>
+                        <time datetime="2011-09-26">26</time>
+                        <time datetime="2011-09-27">27</time>
+                        <time datetime="2011-09-28">28</time>
+                        <time datetime="2011-09-29">29</time>
+                        <time datetime="2011-09-30">30</time>
+                        <time datetime="2011-09-31">31</time>
+                    </div>
+                    <div class="calendar fr">
+                        <b>Сентябрь  2011</b>
+                        <abbr>Пн</abbr>
+                        <abbr>Вт</abbr>
+                        <abbr>Ср</abbr>
+                        <abbr>Чт</abbr>
+                        <abbr>Пт</abbr>
+                        <abbr>Сб</abbr>
+                        <abbr>Вс</abbr>
+                        <time>&nbsp;</time>
+                        <time>&nbsp;</time>
+                        <time>&nbsp;</time>
+                        <time>&nbsp;</time>
+                        <time class="disabled" datetime="2011-09-01">1</time>
+                        <time class="disabled" datetime="2011-09-02">2</time>
+                        <time class="disabled" datetime="2011-09-03">3</time>
+                        <time class="disabled" datetime="2011-09-04">4</time>
+                        <time class="disabled" datetime="2011-09-05">5</time>
+                        <time class="disabled" datetime="2011-09-06">6</time>
+                        <time class="disabled" datetime="2011-09-07">7</time>
+                        <time class="disabled" datetime="2011-09-08">8</time>
+                        <time class="disabled" datetime="2011-09-09">9</time>
+                        <time class="disabled" datetime="2011-09-10">10</time>
+                        <time class="disabled" datetime="2011-09-11">11</time>
+                        <time class="disabled" datetime="2011-09-12">12</time>
+                        <time class="disabled" datetime="2011-09-13">13</time>
+                        <time class="disabled" datetime="2011-09-14">14</time>
+                        <time class="disabled" datetime="2011-09-15">15</time>
+                        <time class="disabled" datetime="2011-09-16">16</time>
+                        <time class="disabled" datetime="2011-09-17">17</time>
+                        <time class="disabled" datetime="2011-09-18">18</time>
+                        <time class="disabled" datetime="2011-09-19">19</time>
+                        <time class="disabled" datetime="2011-09-20">20</time>
+                        <time datetime="2011-09-21" class="today">21</time>
+                        <time datetime="2011-09-22">22</time>
+                        <time datetime="2011-09-23">23</time>
+                        <time datetime="2011-09-24">24</time>
+                        <time datetime="2011-09-25">25</time>
+                        <time datetime="2011-09-26" class="to">26</time>
+                        <time datetime="2011-09-27">27</time>
+                        <time datetime="2011-09-28">28</time>
+                        <time datetime="2011-09-29">29</time>
+                        <time datetime="2011-09-30">30</time>
+                        <time datetime="2011-09-31">31</time>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- PUT DISPLAY BLOCK -->
+        <div class="gray step3" style="display: none;">
+            <div class="wrapper">
+                <div class="direction fr">
+                    <a href="#" class="icon-calendar"><time datetime="2011-09-22">22 сентября 2011</time></a>
+                    <label><input type="checkbox" /> + 3 дня</label>
+                </div>
+                <div class="direction">
+                    <a href="#" class="icon-calendar"><time datetime="2011-09-22">22 сентября 2011</time></a>
+                    <label><input type="checkbox" /> + 3 дня</label>
+                </div>
+
+            </div>
+            <hr />
+            <div class="wrapper">
+                <div class="title-wrapper">Количество пассажиров</div>
+
+                <fieldset>
+                    <!-- <field> element -->
+                    <div>
+                        <b>Взрослые</b>
+                        <input type="text" size="2" value="1"/>
+                        <button class="input-down">&nbsp;</button>
+                    </div>
+                    <div>
+                        <b>Дети&nbsp;&nbsp;&nbsp;</b>
+                        <span>2-12 лет</span>
+                        <input type="text" size="2" value="1"/>
+                        <button class="input-down">&nbsp;</button>
+                    </div>
+                    <div>
+                        <b>Младенцы</b>
+                        <span>до 2 лет</span>
+                        <input type="text" size="2" value="1" class=""/>
+                        <button class="input-down">&nbsp;</button>
+                    </div>
+
+                    <button class="green fr">Найти</button>
+                </fieldset>
+
+            </div>
+        </div>
+    </form>
+    <section>
+        <div class="wrapper">
+            <div class="w600">
+                <h2>Акционные предложения</h2>
+                <table id="flight-suggestions">
+                    <thead>
+                        <tr>
+                            <th>Цена</th>
+                            <th>Маршрут</th>
+                            <th>Перелет возможен</th>
+                            <th>Перевозчик</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>246 грн</td>
+                            <td><a href="#" class="shortcut" data-from="Киев" data-to="Москва">Киев — Москва</a></td>
+                            <td>с <time datetime="2011-09-01">1.09</time> по <time datetime="2011-11-01">1.11</time></td>
+                            <td><a href="#">Аэрофлот</a></td>
+                        </tr>
+                        <tr>
+                            <td>340 грн</td>
+                            <td><a href="#" class="shortcut" data-from="Киев" data-to="Женева">Киев — Женева</a></td>
+                            <td>с <time datetime="2011-09-01">1.09</time> по <time datetime="2011-11-01">1.11</time></td>
+                            <td><a href="#">Windrose</a></td>
+                        </tr>
+                        <tr>
+                            <td>420 грн</td>
+                            <td><a href="#" class="shortcut" data-from="Киев" data-to="Доминикана">Киев — Доминикана</a></td>
+                            <td>с <time datetime="2011-09-01">1.09</time> по <time datetime="2011-11-01">1.11</time></td>
+                            <td><a href="#">S7</a></td>
+                        </tr>
+                        <tr>
+                            <td>460 грн</td>
+                            <td><a href="#" class="shortcut" data-from="Киев" data-to="Прага">Киев — Прага</a></td>
+                            <td>с <time datetime="2011-09-01">1.09</time> по <time datetime="2011-11-01">1.11</time></td>
+                            <td><a href="#">SwissAir</a></td>
+                        </tr>
+                        <tr>
+                            <td>475 грн</td>
+                            <td><a href="#" class="shortcut" data-from="Киев" data-to="Барселона">Киев — Барселона</a></td>
+                            <td>с <time datetime="2011-09-01">1.09</time> по <time datetime="2011-11-01">1.11</time></td>
+                            <td><a href="#">Virgin</a></td>
+                        </tr>
+                        <tr class="active">
+                            <td>
+                                510 грн
+                                <div class="fast-booking">
+                                    <div class="toggler small">
+                                        <!-- be careful with deleting description node, nth-child rule applied in css-->
+                                        <div class="description" id="fastbook-path-value">&nbsp;</div>
+                                        <input id="fastbook-from" type="radio" name="type" data-value="только туда" tabindex="2"/><input id="fastbook-from-to" type="radio" name="type" data-value="туда и обратно" tabindex="2"/>
+                                    </div>
+                                    <script>
+                                    // proof of concept
+                                    (function(){
+                                        function handler(){
+                                            $('fastbook-path-value').innerHTML = this.getAttribute('data-value');
+                                        }
+                                        $('fastbook-from').onclick = handler;
+                                        $('fastbook-from-to').onclick = handler;
+                                    }());
+                                    </script>
+                                    <br/>
+                                    <input type="text" placeholder="дата вылета" />
+                                    <input type="text" placeholder="дата возвращения" />
+                                    <hr />
+                                    <div class="title-wrapper">Количество пассажиров</div>
+                                    <div class="wrapper">
+                                        <fieldset>
+                                            <!-- <field> element -->
+                                            <div>
+                                                <b>Взрослые</b>
+                                                <input type="text" size="2" value="1"/>
+                                                <button class="input-down">&nbsp;</button>
+                                            </div>
+                                            <div>
+                                                <b>Дети&nbsp;&nbsp;&nbsp;</b>
+                                                <span>2-12 лет</span>
+                                                <input type="text" size="2" value="1"/>
+                                                <button class="input-down">&nbsp;</button>
+                                            </div>
+                                            <div>
+                                                <b>Младенцы</b>
+                                                <span>до 2 лет</span>
+                                                <input type="text" size="2" value="1" class=""/>
+                                                <button class="input-down">&nbsp;</button>
+                                            </div>
+
+                                            <button class="green fr">Найти</button>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><a href="#" class="shortcut" data-from="Киев" data-to="Ливерпуль">Киев — Ливерпуль</a></td>
+                            <td>с <time datetime="2011-09-01">1.09</time> по <time datetime="2011-11-01">1.11</time></td>
+                            <td><a href="#">Luthansa</a></td>
+                        </tr>
+                        <tr>
+                            <td>542 грн</td>
+                            <td><a href="#" class="shortcut" data-from="Киев" data-to="Нью-Йорк">Киев — Нью-Йорк</a></td>
+                            <td>с <time datetime="2011-09-01">1.09</time> по <time datetime="2011-11-01">1.11</time></td>
+                            <td><a href="#">МАУ</a></td>
+                        </tr>
+                        <tr>
+                            <td>554 грн</td>
+                            <td><a href="#" class="shortcut" data-from="Киев" data-to="Лондон">Киев — Лондон</a></td>
+                            <td>с <time datetime="2011-09-01">1.09</time> по <time datetime="2011-11-01">1.11</time></td>
+                            <td><a href="#">WizzAir</a></td>
+                        </tr>
+                        <tr>
+                            <td>572 грн</td>
+                            <td><a href="#" class="shortcut" data-from="Киев" data-to="Рим">Киев — Рим</a></td>
+                            <td>с <time datetime="2011-09-01">1.09</time> по <time datetime="2011-11-01">1.11</time></td>
+                            <td><a href="#">Virgin</a></td>
+                        </tr>
+                        <tr>
+                            <td>740 грн</td>
+                            <td><a href="#" class="shortcut" data-from="Киев" data-to="Стамбул">Киев — Стамбул</a></td>
+                            <td>с <time datetime="2011-09-01">1.09</time> по <time datetime="2011-11-01">1.11</time></td>
+                            <td><a href="#">Luthansa</a></td>
+                        </tr>
+                        <tr>
+                            <td>800 грн</td>
+                            <td><a href="#" class="shortcut" data-from="Киев" data-to="Венесуэла">Киев — Венесуэла</a></td>
+                            <td>с <time datetime="2011-09-01">1.09</time> по <time datetime="2011-11-01">1.11</time></td>
+                            <td><a href="#">KLM</a></td>
+                        </tr>
+                        <tr>
+                            <td>860 грн</td>
+                            <td><a href="#" class="shortcut" data-from="Киев" data-to="Ливерпуль">Киев — Ливерпуль</a></td>
+                            <td>с <time datetime="2011-09-01">1.09</time> по <time datetime="2011-11-01">1.11</time></td>
+                            <td><a href="#">Virgin</a></td>
+                        </tr>
+                        <tr>
+                            <td>890 грн</td>
+                            <td><a href="#" class="shortcut" data-from="Киев" data-to="Нью-Йорк">Киев — Нью-Йорк</a></td>
+                            <td>с <time datetime="2011-09-01">1.09</time> по <time datetime="2011-11-01">1.11</time></td>
+                            <td><a href="#">Luthansa</a></td>
+                        </tr>
+                        <tr>
+                            <td>900 грн</td>
+                            <td><a href="#" class="shortcut" data-from="Киев" data-to="Лондон">Киев — Лондон</a></td>
+                            <td>с <time datetime="2011-09-01">1.09</time> по <time datetime="2011-11-01">1.11</time></td>
+                            <td><a href="#">МАУ</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="tac">
+                    <a href="#" class="refresh">Еще 10 специальных предложений</a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="wrapper">
+            <ul>
+                <li>Travelolife</li>
+                <li><a href="#">Билеты</a></li>
+                <li><a href="#">Авиакомпании</a></li>
+                <li><a href="#">Самолеты</a></li>
+                <li><a href="#">Аэропорты</a></li>
+            </ul>
+            <ul>
+                <li>Клиенту</li>
+                <li><a href="#">Вход</a></li>
+                <li><a href="#">Регистрация</a></li>
+                <li><a href="#">Вопросы и ответы</a></li>
+            </ul>
+            <ul>
+                <li>О проекте</li>
+                <li><a href="#">Концепция</a></li>
+                <li><a href="#">Команда</a></li>
+                <li><a href="#">Контактная информация</a></li>
+                <li><a href="#">Блог</a></li>
+            </ul>
+            <ul>
+                <li>Travelolife в социальных сетях:</li>
+                <li>
+                    <span>&nbsp;</span>
+                    <span>&nbsp;</span>
+                    <span>&nbsp;</span>
+                </li>
+            </ul>
+            <hr />
+            <div class="fr">
+                <a id="aimbulance">&nbsp;</a>
+            </div>
+            <div class="copy">
+                2010 © Travelolife, 2011. Все права защищены.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

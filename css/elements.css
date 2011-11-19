@@ -1,0 +1,195 @@
+h2 {
+    font-size: 16px;
+    margin: 0px;
+    padding: 5px 0 10px;
+}
+
+hr {
+    padding: 0px;
+    height: 1px;
+    border: 0px;
+    background: #e3e4e4;
+    margin: 10px 0;
+}
+
+input[type="text"] {
+    margin: 0px;
+    border: 1px solid #c0c0c0;
+    border-radius: 2px;
+    padding: 5px;
+    font-size: 14px;
+}
+    input::-webkit-input-placeholder {
+        font-style: italic;
+    }
+    input:-moz-placeholder {
+        font-style: italic;
+    }
+
+input.big[type="text"] {
+    font-size: 16px;
+    padding: 10px;
+}
+
+.toggler {
+    display: inline-block;
+    margin-bottom: -14px;
+    height: 40px;
+}
+    .toggler .description{
+        width: 100%;
+        text-align: center;
+        position: relative;
+        line-height: 32px;
+        margin-top: -32px;
+        font-size: 12px;
+        font-weight: bold;
+        color: #666;
+    }
+    .toggler input[type="radio"] {
+        position: relative;
+        -webkit-appearance: button;
+        -moz-appearance: none;
+        border: 1px solid #c0c0c0;
+        width: 40px;
+        height: 40px;
+        margin: 0px;
+        background: #fff;
+        z-index: 1;
+        margin: 0;
+        box-shadow: inset 0px -7px 6px #f5f5f5;
+    }
+        .toggler input[type="radio"]:nth-child(2) {
+            border-top-left-radius: 2px;
+            border-bottom-left-radius: 2px;
+        }
+        .toggler input[type="radio"]:nth-child(3) {
+            margin: 0 -1px;
+        }
+        .toggler input[type="radio"]:last-child {
+            border-top-right-radius: 2px;
+            border-bottom-right-radius: 2px;
+        }
+    .toggler input[type="radio"]:checked {
+        border-color: #2a3235;
+        background: #686d6f;
+        box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+        z-index: 2;
+    }
+
+.toggler.small {
+    position: relative;
+}
+    .toggler.small .description {
+        position: absolute;
+        margin: -2px 0 0 70px;
+        white-space: nowrap;
+    }
+    .toggler.small input[type="radio"] {
+        width: 28px;
+        height: 28px;
+        box-shadow: inset 0px -6px 5px #f5f5f5;
+    }
+        .toggler.small input[type="radio"]:checked {
+            box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+        }
+
+
+a {
+    color: #34b0ea;
+    text-decoration: none;
+}
+    a:hover {
+        text-decoration: underline;
+    }
+    a.shortcut {
+        border-bottom: 1px dashed;
+    }
+        a.shortcut:hover {
+            text-decoration: none;
+        }
+    a.refresh {
+        display: inline-block;
+        padding: 3px 30px;
+    }
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+    table tr:last-child {
+        border-bottom: 1px solid #e9eaea;
+    }
+        table tbody tr:hover,
+        table tbody tr.active {
+            background: #eee;
+            cursor: pointer;
+        }
+
+    table th {
+        padding: 10px;
+        color: #666;
+        font-style: italic;
+        font-size: 12px;
+        font-weight: normal;
+        text-align: left;
+    }
+    table td {
+        padding: 10px;
+    }
+        table td:first-child {
+            font-weight: bold;
+        }
+
+button.close {
+    border: 1px solid #f4f4f4;
+    color: #999;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2px 20px 3px 10px;
+}
+
+button.green {
+    text-transform: uppercase;
+    color: #fff;
+    background: -webkit-linear-gradient(top, #a6d83b, #9ac836);
+    padding: 10px 25px;
+    border: 1px solid #8fba32;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: bold;
+    text-shadow: #8fba32 1px 1px 2px;
+}
+
+fieldset {
+    border: 0;
+    b_order: 1px solid #000;
+}
+    fieldset input[type="text"] {
+        margin: 0 10px 0 5px;
+    }
+
+    fieldset>div {
+        display: inline-block;
+        position: relative;
+        margin: 0 10px 0 0;
+    }
+        fieldset>div b {
+            font-weight: normal;
+        }
+        fieldset>div span {
+            font-size: 11px;
+            color: #999;
+            position: absolute;
+            bottom: -7px;
+            left: 0px;
+        }
+
+        fieldset>div button.input-down {
+            position: absolute;
+            right: 13px;
+            top: 1px;
+            border: 0px;
+            height: 24px;
+            width: 21px;
+        }

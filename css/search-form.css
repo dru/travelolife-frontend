@@ -1,0 +1,142 @@
+.search-form {
+}
+    .search-form input.big {
+        width: 370px;
+    }
+
+    .search-form .direction {
+        top: 0px;
+        position: absolute;
+        text-align: left;
+    }
+        .search-form .direction.right {
+            right: 0px;
+        }
+
+        .search-form .form-magnifier {
+            border: 0px;
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            right: 0px;
+            top: 0px;
+        }
+
+        .search-form a.shortcut {
+            font-style: italic;
+            font-size: 12px;
+            line-height: 30px;
+            color: #999;
+        }
+
+    .search-form .toggler {
+        margin-bottom: 30px;
+    }
+
+.search-form .step2 {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    margin-top: -3px;
+}
+    .step2 label {
+        font-size: 11px;
+        color: #666;
+    }
+        .step2 label.checked{
+            color: #f0732d;
+        }
+
+    .step2 input[type="checkbox"] {
+        -webkit-appearance: button;
+        background: #666;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        margin: 0 5px 0 0;
+    }
+        .step2 input[type="checkbox"]:checked {
+            background: #f0732d;
+        }
+
+    .search-form .step2-title-wrapper {
+        margin-top: -21px;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+    }
+
+    .search-form .step2-title {
+        border: 0px;
+        padding: 0 10px;
+        display: inline;
+        font-size: 16px;
+        line-height: 20px;
+
+    }
+
+    .step2-title i.icon-airplane {
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+        margin: 0 5px;
+    }
+
+.search-form .fastday {
+    margin-top: 20px;
+    color: #333;
+    font-style: italic;
+    font-size: 12px;
+    line-height: 25px;
+}
+    .search-form .fastday span {
+        display: inline-block;
+        line-height: 15px;
+    }
+
+    .search-form .fastday a {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+
+.search-form .step3 {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    margin-top: -35px;
+    padding: 0 0 15px 0;
+    color: #666;
+    font-size: 13px;
+}
+
+    .step3 .direction {
+        width: 395px;
+        position: inherit;
+        font-size: 12px;
+    }
+        .step3 .direction input[type="checkbox"] {
+            margin-left: 30px;
+        }
+
+        .step3 .direction a {
+            padding-left: 20px;
+        }
+
+    .search-form .title-wrapper {
+        background: #F8F8F8;
+        display: inline-block;
+        position: absolute;
+        top: -43px;
+        left: -10px;
+        padding: 3px 10px;
+        font-weight: bold;
+    }
+
+    .step3 hr {
+        margin: 30px 0;
+    }
+
+    .step3 button.green {
+        margin-top: -10px;
+    }

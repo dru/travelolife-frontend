@@ -1,0 +1,41 @@
+.fast-booking {
+    position: absolute;
+    background: #f8f8f8;
+    left: 0px;
+    margin-top: 10px;
+    border: 1px solid #e3e4e4;
+    border-left: 0px;
+    border-right: 0px;
+    padding: 10px 20px;
+    width: 560px;
+    font-weight: normal;
+    font-size: 13px;
+    color: #666;
+}
+    .fast-booking .toggler {
+        margin-bottom: 1px;
+    }
+
+    .fast-booking input[type="text"] {
+        font-size: 13px;
+    }
+
+    .fast-booking hr {
+        margin: 20px -20px -10px;
+    }
+    .fast-booking .title-wrapper {
+        margin: -70px 0 0 -5px;
+        display: inline-block;
+        background: #f8f8f8;
+        padding: 5px;
+        font-weight: bold;
+    }
+
+    .fast-booking .wrapper {
+        margin: 0;
+        width: 100%;
+        margin: 15px 0 10px;
+    }
+    .fast-booking button.green {
+        margin-top: -5px;
+    }
