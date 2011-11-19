@@ -1,3 +1,8 @@
 initial version tested in chrome only
-TODO: fallback for input[placeholder]
-TODO: -moz-appearance simply doesnt work, so input[radio] should be replaced with button and javascript :(
+
+NOTES: 
+    images done as data-url (images/ folder is optional if we need to support legacy browsers)
+
+TODOS:
+    fallback for input[placeholder]
+    -moz-appearance simply doesnt work, so input[radio] should be replaced with button and javascript :(
