@@ -112,6 +112,9 @@ a {
         display: inline-block;
         padding: 3px 30px;
     }
+    a.small {
+        font-size: 12px;
+    }
 
 table {
     border-collapse: collapse;

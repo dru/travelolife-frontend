@@ -1,0 +1,37 @@
+ul.faq {
+    list-style: none;
+    padding: 20px 0 0 80px;
+    color: #717070;
+}
+    ul.faq li {
+        margin-bottom: 30px;
+        position: relative;
+    }
+        ul.faq li i {
+            position: absolute;
+            display: block;
+            left: -63px;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background-color: #ffa913;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+
+    ul.faq b {
+        font-size: 16px;
+        color: #293134;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+.faq-icon-calendar {
+    background-image: url('../static/faq-icon-calendar.png');
+}
+.faq-icon-ticket {
+    background-image: url('../static/faq-icon-ticket.png');
+}
+.faq-icon-refresh {
+    background-image: url('../static/faq-icon-refresh.png');
+}

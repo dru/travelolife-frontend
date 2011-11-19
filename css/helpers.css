@@ -6,6 +6,10 @@
     float: left;
 }
 
+.w300 {
+    width: 300px;
+}
+
 .w600 {
     width: 600px;
 }
