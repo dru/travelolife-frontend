@@ -1,10 +1,14 @@
 @import 'images.css';
+@import 'images-companies.css';
 @import 'header.css';
 @import 'helpers.css';
 @import 'elements.css';
 @import 'search-form.css';
+@import 'search-result-query.css';
+@import 'search-filter.css';
 @import 'calendar.css';
 @import 'fast-booking.css';
+@import 'ticket.css';
 @import 'static.css';
 @import 'footer.css';
 

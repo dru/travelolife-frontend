@@ -3,6 +3,14 @@ h2 {
     margin: 0px;
     padding: 5px 0 10px;
 }
+    h2 small {
+        font-size: 11px;
+        font-weight: normal;
+        color: #666;
+    }
+        h2 small a {
+            margin: 3px !important;
+        }
 
 hr {
     padding: 0px;
@@ -12,9 +20,11 @@ hr {
     margin: 10px 0;
 }
 
-input[type="text"] {
+input[type="text"],
+.input {
     margin: 0px;
     border: 1px solid #c0c0c0;
+    background: #fff;
     border-radius: 2px;
     padding: 5px;
     font-size: 14px;
@@ -115,6 +125,13 @@ a {
     a.small {
         font-size: 12px;
     }
+    a.micro {
+        font-weight: normal;
+        font-size: 11px;
+    }
+    a.cancel {
+        padding:  0 13px 1px 0;
+    }
 
 table {
     border-collapse: collapse;
@@ -163,6 +180,18 @@ button.green {
     font-weight: bold;
     text-shadow: #8fba32 1px 1px 2px;
 }
+button.gold {
+    border: 1px solid #f6a00f;
+    padding: 9px 18px;
+    background: #fbce1c;
+    background: -webkit-linear-gradient(#fbce1c, #fba91c);
+    border-radius: 2px;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    font-size: 14px;
+    font-weight: bold;
+}
 
 fieldset {
     border: 0;
@@ -196,3 +225,12 @@ fieldset {
             height: 24px;
             width: 21px;
         }
+
+.form-magnifier {
+    border: 0px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}

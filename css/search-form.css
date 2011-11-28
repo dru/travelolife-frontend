@@ -13,15 +13,6 @@
             right: 0px;
         }
 
-        .search-form .form-magnifier {
-            border: 0px;
-            width: 40px;
-            height: 40px;
-            position: absolute;
-            right: 0px;
-            top: 0px;
-        }
-
         .search-form a.shortcut {
             font-style: italic;
             font-size: 12px;

@@ -6,6 +6,10 @@
     float: left;
 }
 
+.w200 {
+    width: 200px;
+}
+
 .w300 {
     width: 300px;
 }
@@ -20,4 +24,9 @@
 
 .pr {
     position: relative;
+}
+
+.dtc {
+    display: table-cell;
+    vertical-align: top;
 }

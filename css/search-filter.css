@@ -1,0 +1,32 @@
+.search-filter {
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+    .search-filter fieldset {
+        color: #666;
+        margin: 10px 0;
+        padding: 10px 10px 10px 25px;
+        line-height: 24px;
+    }
+        .search-filter fieldset legend {
+            color: #000;
+            font-weight: bold;
+            padding: 0 0 0 25px;
+            margin: 0 0 0 -25px;
+        }
+            .search-filter legend i {
+                display: inline-block;
+                width: 13px;
+                height: 13px;
+                margin: 0 0 -2px 5px;
+            }
+
+        .search-filter fieldset label,
+        .search-filter fieldset b {
+            display: block;
+        }
+
+        .search-filter fieldset a {
+            color: #666;
+        }
