@@ -98,6 +98,14 @@
                 font-size: 13px;
             }
 
-        .ticket .information a.shortcut {
+        .ticket .information a.details {
             line-height: 30px;
+            padding-right: 12px;
+            border: 0px;
         }
+            .ticket .information a.details:hover {
+                text-decoration: none;
+            }
+            .ticket .information a.details span {
+                border-bottom: 1px dashed;
+            }
