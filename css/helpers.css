@@ -30,3 +30,7 @@
     display: table-cell;
     vertical-align: top;
 }
+
+.mt30 {
+    margin: 30px 0;
+}

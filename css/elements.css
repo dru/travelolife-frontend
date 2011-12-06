@@ -19,6 +19,14 @@ hr {
     background: #e3e4e4;
     margin: 10px 0;
 }
+    hr.wide {
+        margin: 25px -25px;
+    }
+    hr.dot {
+        background: transparent;
+        margin-top: 9px;
+        border-bottom: 1px #e3e4e4 dotted;
+    }
 
 input[type="text"],
 .input {
@@ -132,6 +140,15 @@ a {
     a.cancel {
         padding:  0 13px 1px 0;
     }
+    a.external {
+        color: #333;
+        padding:  0 13px 1px 0;
+        text-decoration: underline;
+    }
+        a.external:hover {
+            text-decoration: none;
+        }
+
 
 table {
     border-collapse: collapse;
@@ -192,6 +209,52 @@ button.gold {
     font-size: 14px;
     font-weight: bold;
 }
+
+.buttons {
+    margin: 10px 10px 10px 0;
+    display: inline-block;
+}
+
+.buttons button {
+    border: 1px solid #e5e5e5;
+    background-color: #fff;
+    color: #666;
+    font-size: 13px;
+    padding: 5px 13px;
+    margin: 0 -1px 0 0;
+}
+    .buttons button:first-child {
+        border-top-left-radius: 2px;
+        border-bottom-left-radius: 2px;
+    }
+    .buttons button:last-child {
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 2px;
+    }
+    button.print,
+    button.download {
+        padding-left: 30px;
+    }
+
+button.up,
+button.down {
+    width: 27px;
+    height: 26px;
+    border: 0px;
+}
+
+i.arrow {
+    display: inline-block;
+    width: 20px;
+    height: 8px;
+}
+
+.red {
+    color: #ff0000;
+}
+    .red * {
+        color: #ff0000!important;
+    }
 
 fieldset {
     border: 0;

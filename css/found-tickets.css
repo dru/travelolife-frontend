@@ -1,0 +1,111 @@
+.found-tickets .ticket {
+    border: 1px solid #e5e5e5;
+    margin: 15px 0;
+    width: 740px;
+}
+
+    .found-tickets .ticket .company {
+        padding: 40px;
+        padding-top: 20px;
+        width: 125px;
+        text-align: center;
+    }
+        .found-tickets .ticket .company .logo {
+            margin: 0 auto;
+            height: 100px;
+            width: 100px;
+        }
+
+        .found-tickets .ticket .company .stars {
+            width: 75px;
+            margin: 0 auto;
+        }
+            .found-tickets .ticket .company .stars .inner {
+                height: 13px;
+            }
+            .found-tickets .ticket .company .stars .s0 {
+                background: none;
+            }
+            .found-tickets .ticket .company .stars .s1 {
+                width: 15px;
+            }
+            .found-tickets .ticket .company .stars .s2 {
+                width: 30px;
+            }
+            .found-tickets .ticket .company .stars .s3 {
+                width: 45px;
+            }
+            .found-tickets .ticket .company .stars .s4 {
+                width: 60px;
+            }
+            .found-tickets .ticket .company .stars .s5 {
+                width: 75px;
+            }
+        .found-tickets .ticket .company b {
+            color: #333;
+            font-size: 20px;
+            line-height: 50px;
+        }
+        .found-tickets .ticket .company i {
+            color: #999;
+            font-size: 11px;
+        }
+        .found-tickets .ticket .company a {
+            font-style: italic;
+        }
+        .found-tickets .ticket .company button {
+            margin-top: 20px;
+        }
+
+    .ticket .information {
+        padding: 50px 40px 50px 0;
+        color: #666;
+        font-size: 12px;
+    }
+
+        .ticket .information h3  {
+            margin: 0px;
+            padding: 0px;
+            font-size: 16px;
+            color: #333;
+        }
+            .ticket .information h3 i {
+                display: inline-block;
+                width: 15px;
+                height: 14px;
+                margin: 0 5px 0 7px;
+            }
+            .ticket .information h3 span {
+                font-size: 14px;
+                color: #666;
+            }
+
+        .ticket .information .flight {
+            margin: 15px 0;
+        }
+            .ticket .information .flight .dtc {
+                width: 215px;
+            }
+                .ticket .information .flight .dtc:first-child {
+                    width: 100px;
+                }
+            .ticket .information .flight i {
+                display: block;
+            }
+
+            .ticket .information .flight b {
+                color: #333;
+                font-size: 13px;
+            }
+
+        .ticket .information a.details {
+            line-height: 30px;
+            padding-right: 12px;
+            border: 0px;
+        }
+            .ticket .information a.details:hover {
+                text-decoration: none;
+            }
+            .ticket .information a.details span {
+                border-bottom: 1px dashed;
+            }
