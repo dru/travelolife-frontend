@@ -148,6 +148,9 @@ a {
         a.external:hover {
             text-decoration: none;
         }
+    a.back {
+        padding:0 0 0 9px;
+    }
 
 
 table {
