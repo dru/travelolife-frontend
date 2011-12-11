@@ -11,6 +11,9 @@ h2 {
         h2 small a {
             margin: 3px !important;
         }
+    h2.black {
+        color: #000;
+    }
 
 hr {
     padding: 0px;
