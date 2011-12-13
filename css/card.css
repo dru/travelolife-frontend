@@ -1,0 +1,59 @@
+.card {
+    margin-bottom: 30px;
+}
+
+.card .front,
+.card .back {
+    display: table-cell;
+    width: 240px;
+    height: 180px;
+    padding: 5px 30px 10px 30px;
+
+    border: 1px solid #dedede;
+    border-radius: 10px;
+    background: -webkit-linear-gradient(left, #fff, #f5f5f5);
+    box-shadow: 2px 2px 3px #f5f5f5;
+
+    line-height: 20px;
+
+    color: #666;
+    text-transform: uppercase;
+    font-size: 9px;
+    font-weight: bold;
+
+    position: relative;
+}
+
+.card .divider {
+    display: table-cell;
+    width: 30px;
+}
+
+.card .front .dtc {
+    padding-right: 3px;
+}
+
+.card .front .left {
+    line-height: 12px;
+    padding: 0 5px 0 95px;
+}
+
+.card .back hr {
+    position: absolute;
+    display: block;
+    margin: 10px -30px;
+    height: 40px;
+    width: 100%;
+    top: 15px;
+}
+
+.card .back .right {
+    position: absolute;
+    top: 80px;
+    left: 200px;
+}
+
+.mt20 button.green {
+    margin-top: 10px;
+    margin-bottom: -20px;
+}

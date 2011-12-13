@@ -2,3 +2,12 @@
     margin-top: -10px;
     margin-bottom: 10px;
 }
+
+.booking .top-menu {
+    display: block;
+    padding: 5px 0 0 20px;
+}
+
+    .booking .top-menu a {
+        margin: 0 5px 0 0;
+    }

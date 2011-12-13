@@ -1,3 +1,19 @@
+.light {
+    color: #999;
+}
+
+.micro {
+    font-size: 11px;
+}
+
+.big {
+    font-size: 16px;
+}
+    .big b {
+        font-size: 24px;
+        color: #333;
+    }
+
 h2 {
     font-size: 16px;
     margin: 0px;
@@ -12,7 +28,7 @@ h2 {
             margin: 3px !important;
         }
     h2.black {
-        color: #000;
+        color: #333;
     }
 
 hr {
@@ -160,11 +176,11 @@ table {
     border-collapse: collapse;
     width: 100%;
 }
-    table tr:last-child {
+    table.results tr:last-child {
         border-bottom: 1px solid #e9eaea;
     }
-        table tbody tr:hover,
-        table tbody tr.active {
+        table.results tbody tr:hover,
+        table.results tbody tr.active {
             background: #eee;
             cursor: pointer;
         }
@@ -177,12 +193,30 @@ table {
         font-weight: normal;
         text-align: left;
     }
-    table td {
+    table.results td {
         padding: 10px;
     }
-        table td:first-child {
+        table.results td:first-child {
             font-weight: bold;
         }
+
+table.info {
+    width: auto;
+}
+    table.info th {
+        padding: 0px;
+    }
+    table.info td {
+        padding: 3px 30px 0 0;
+        font-size: 16px;
+        color: #333;
+        font-weight: bold;
+    }
+    table.info td.small {
+        color: #666;
+        font-size: 12px;
+        font-weight: normal;
+    }
 
 button.close {
     border: 1px solid #f4f4f4;
@@ -241,6 +275,37 @@ button.gold {
     button.download {
         padding-left: 30px;
     }
+
+.radio button {
+    background: -webkit-linear-gradient(#fff, #f5f5f5);
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 7px 14px;
+    position: relative;
+}
+    .radio button.active {
+        background: #616769;
+        border-color: #616769;
+        border-bottom-color: #5d6365;
+        color: #fff;
+        box-shadow: inset 5px 5px 10px rgba(0,0,0,0.4);
+    }
+
+    .radio button i {
+        display: none;
+        border: 10px solid transparent;
+        height: 1px;
+        width: 0px;
+        border-top-color: #5d6365;
+        position: absolute;
+        bottom: -22px;
+        left: 50%;
+        margin-left: -10px;
+    }
+        .radio button.active i {
+            display: block;
+        }
 
 button.up,
 button.down {
