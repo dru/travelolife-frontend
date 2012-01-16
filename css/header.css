@@ -1,9 +1,11 @@
 a#logo {
     display: block;
-    width: 141px;
-    height: 54px;
+    width: 201px;
+    height: 25px;
     text-indent: -1000px;
+    padding-top:32px;
     margin-bottom: 10px;
+    background-position:bottom;
 }
 
 .right-menu {
