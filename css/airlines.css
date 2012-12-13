@@ -1,0 +1,220 @@
+.airlines ul {
+  -webkit-padding-start: 0;
+}
+
+.filter {
+  margin-bottom: 10px;
+}
+
+  .filter p {
+    font-size: 13px;
+  }
+
+  .filter .details {
+    padding-right: 12px;
+    border: 0px;
+    font-weight: bold;
+  }
+
+  .filter .details:hover {
+    text-decoration: none;
+  }
+
+  .filter .details span {
+    border-bottom: 1px dashed;
+  }
+
+.sort {
+  margin-bottom: 20px;
+}
+
+  .sort ul {
+    list-style: none;
+  }
+
+    .sort ul li {
+      display: inline-block;
+      margin-right: 7px;
+    }
+
+      .sort ul li a {
+        font-size: 11px;
+        color: #666;
+        border-bottom: 1px dashed #666;
+      }
+
+        .sort ul li a:hover {
+          text-decoration: none;
+          border-bottom: none;
+        }
+
+    .sort ul .active {
+      background: #939698;
+      padding: 0px 5px 2px;
+      border-radius: 3px;
+    }
+
+      .sort ul .active a {
+        border-bottom: none;
+        color: #fff;
+        padding-right: 9px;
+      }
+
+    .sort ul .ascending a {
+      background: url(../images/ico-arrow-top.png) no-repeat center right;
+    }
+
+    .sort ul .descending a {
+      background: url(../images/ico-arrow-down.png) no-repeat center right;
+    }
+
+.airlines-list {
+  list-style: none;
+  -webkit-margin-before: 0;
+}
+
+  /* clearfix */
+  .airlines-list li {
+    display: inline-block;
+  }
+
+    .airlines-list li:after {
+      content: "";
+      display: block;
+      height: 0;
+      clear: both;
+      overflow: hidden;
+      visibility: hidden;
+    }
+
+  .airlines-list li {
+    display: block;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #e9eaea;
+  }
+
+    .airlines-list li .left {
+      width: 180px;
+      float: left;
+      text-align: center;
+    }
+
+      .airlines-list li .left img {
+        margin-top: 50px;
+      }
+
+    .airlines-list li .center {
+      width: 475px;
+      float: left;
+      padding-left: 20px;
+    }
+
+      .airlines-list li .center h3 {
+        font-size: 24px;
+        color: #333;
+        margin: 40px 0 5px;
+      }
+
+      .airlines-list li .center p {
+        font-size: 13px;
+        color: #666;
+      }
+
+      .airlines-list li .center tr:first-child,
+      .airlines-list li .center tr:last-child {
+        border-bottom: 1px solid #e9eaea;
+      }
+
+      .airlines-list li .center table {
+        margin-bottom: 20px;
+      }
+
+      .airlines-list li .center tr th {
+        padding-left: 15px;
+      }
+
+      .airlines-list li .center tr:last-child td {
+        padding-bottom: 20px;
+      }
+
+      .airlines-list li .center tr td {
+        color: #333;
+        font-size: 14px;
+        padding: 12px 0px 12px 15px;
+        max-width: 260px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+
+      .airlines-list li .center tr td:nth-child(1) {
+        font-weight: bold;
+      }
+
+      .airlines-list li .center tr td:nth-child(2) {
+        color: #34b0ea;
+      }
+
+      .airlines-list li .center tr td a {
+        font-weight: bold;
+        border-bottom: 1px dashed #34b0ea;
+      }
+
+      .airlines-list li .center tr td a:hover {
+        text-decoration: none;
+        border-bottom: none;
+      }
+
+      .airlines-list li .center > a {
+        margin-left: 15px;
+        font-size: 13px;
+      }
+
+    .airlines-list li .right {
+      float: right;
+      width: 125px;
+      margin: 50px 80px 0 0;
+      text-align: center;
+    }
+
+    .airlines-list li .right .stars {
+      width: 110px;
+      background: url(../images/ico-star-big.png) repeat-x;
+      margin: 0 auto 15px;
+    }
+
+      .airlines-list li .right .stars .inner {
+        height: 18px;
+        background: #fff url(../images/ico-star-big-gold.png) repeat-x;
+      }
+
+      .airlines-list li .right .stars .s0 {
+        background: none;
+      }
+
+      .airlines-list li .right .stars .s1 {
+        width: 22px;
+      }
+
+      .airlines-list li .right .stars .s2 {
+        width: 44px;
+      }
+
+      .airlines-list li .right .stars .s3 {
+        width: 66px;
+      }
+
+      .airlines-list li .right .stars .s4 {
+        width: 88px;
+      }
+
+      .airlines-list li .right .stars .s5 {
+        width: 110px;
+      }
+
+    .airlines-list li .right > a {
+      background: url(../images/ico-comments.png) no-repeat left center;
+      padding: 0 0 0 20px;
+      font-size: 13px;
+    }
+

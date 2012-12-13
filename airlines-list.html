@@ -1,0 +1,181 @@
+<!doctype html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="css/all.css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script>
+        // replace me with framework
+        window.$ = function(a){
+            return document.getElementById(a);
+        };
+    </script>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <a id="logo" href="#">&nbsp;</a>
+
+            <div class="top-menu right-menu">
+                <a href="#">О проекте</a>
+                <a href="#">Вопросы и ответы</a>
+                <br/>
+                <small>Служба поддержки</small><br/>
+                <b>0 800 423 00 77</b>
+            </div>
+
+            <nav>
+                <div class="top-menu">
+                    <a href="#" id="nav-sign-in">Вход</a>
+                    <a href="#" id="nav-registration">Регистрация</a>
+                    <a href="#" class="lang active">Рус</a>
+                    <a href="#" class="lang">Eng</a>
+                </div>
+                <a href="#" class="active">Билеты</a>
+                <a href="#">Авиакомпании</a>
+                <a href="#">Самолеты</a>
+                <a href="#">Аэропорты</a>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <div class="wrapper airlines">
+          <div class="filter">
+            <p>Страна: 
+              <a href="#" class="details">
+                <span>Украина</span>
+              </a>
+            </p>
+          </div>
+
+          <div class="sort">
+            <ul>
+              <!-- active items can have 'ascending' or 'descending' class -->
+              <li class="active descending"><a href="#">По рейтингу</a></li>
+              <li><a href="#">По перелётам</a></li>
+              <li><a href="#">По количеству отзывов</a></li>
+            </ul>
+          </div>
+
+          <ul class="airlines-list">
+            <li>
+              <div class="left">
+                <a href="airline-company.html">
+                  <img src="images/companies/klm-big.jpg" />
+                </a>
+              </div>
+              <div class="center">
+                <h3>KLM</h3>
+                <p>Королевские Голландские Авиалинии, является старейшей авиакомпанией в мире, которая функционирует под тем же названием.</p>
+                <table>
+                  <tr>
+                    <th width="90">Цена</th>
+                    <th>Маршрут</th>
+                    <th width="120">Перелёт возможен</th>
+                  </tr>
+                  <tr>
+                    <td>246 грн</td>
+                    <td><a href="#">Киев — Москва</a></td>
+                    <td>с 1.09 по 1.11</td>
+                  </tr>
+                  <tr>
+                    <td>340 грн</td>
+                    <td><a href="#">Киев — Женева</a></td>
+                    <td>с 1.09 по 1.11</td>
+                  </tr>
+                  <tr>
+                    <td>420 грн</td>
+                    <td><a href="#">Киев — Доминикана</a></td>
+                    <td>с 1.09 по 1.11</td>
+                  </tr>
+                </table>
+
+                <a href="#">Ещё 7 акционных предложений</a>
+              </div>
+              <div class="right">
+                <div class="stars">
+                  <!-- additional class is stars count, change from s0 to s5 -->
+                  <div class="inner s2"></div>
+                </div>
+                <a href="#">45 отзывов</a>
+              </div>
+            </li>
+            <li>
+              <div class="left">
+                <a href="airline-company.html">
+                  <img src="images/companies/klm-big.jpg" />
+                </a>
+              </div>
+              <div class="center">
+                <h3>Аэросвит</h3>
+                <p>Авиакомпания “АэроСвит” была создана в 1994 году в форме закрытого акционерного общества.</p>
+                <table>
+                  <tr>
+                    <th width="90">Цена</th>
+                    <th>Маршрут</th>
+                    <th width="120">Перелёт возможен</th>
+                  </tr>
+                  <tr>
+                    <td>246 грн</td>
+                    <td><a href="#">Киев — Москва</a></td>
+                    <td>с 1.09 по 1.11</td>
+                  </tr>
+                  <tr>
+                    <td>340 грн</td>
+                    <td><a href="#">Киев — Женева</a></td>
+                    <td>с 1.09 по 1.11</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="right">
+                <div class="stars">
+                  <!-- additional class is stars count, change from s0 to s5 -->
+                  <div class="inner s2"></div>
+                </div>
+                <a href="#">13 отзывов</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+    </section>
+    <footer>
+        <div class="wrapper">
+            <ul>
+                <li>Travelolife</li>
+                <li><a href="#">Билеты</a></li>
+                <li><a href="#">Авиакомпании</a></li>
+                <li><a href="#">Самолеты</a></li>
+                <li><a href="#">Аэропорты</a></li>
+            </ul>
+            <ul>
+                <li>Клиенту</li>
+                <li><a href="#">Вход</a></li>
+                <li><a href="#">Регистрация</a></li>
+                <li><a href="#">Вопросы и ответы</a></li>
+            </ul>
+            <ul>
+                <li>О проекте</li>
+                <li><a href="#">Концепция</a></li>
+                <li><a href="#">Команда</a></li>
+                <li><a href="#">Контактная информация</a></li>
+                <li><a href="#">Блог</a></li>
+            </ul>
+            <ul>
+                <li>Travelolife в социальных сетях:</li>
+                <li>
+                    <span>&nbsp;</span>
+                    <span>&nbsp;</span>
+                    <span>&nbsp;</span>
+                </li>
+            </ul>
+            <hr />
+            <div class="fr">
+                <a id="aimbulance">&nbsp;</a>
+            </div>
+            <div class="copy">
+                2010 © Travelolife, 2011. Все права защищены.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
