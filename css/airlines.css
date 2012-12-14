@@ -177,6 +177,9 @@
 .airlines .buttons button:hover:not(.active) {
   background: #e0e1e1;
 }
+.airlines .buttons .active span {
+  color: #eee;
+}
 .airlines .buttons button span {
   color: #999;
 }
@@ -322,4 +325,39 @@
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+.airlines-specials table {
+  font-size: 16px;
+}
+.airlines-specials table tr:first-child {
+  border-bottom: 1px solid #ccc;
+}
+.airlines-specials table tr:first-child th {
+  font-size: 16px;
+  padding: 20px 15px;
+}
+.airlines-specials table tr:not(:first-child):hover {
+  background: #eee;
+}
+.airlines-specials table td {
+  padding: 20px 15px;
+  color: #333;
+}
+.airlines-specials table td a {
+  border-bottom: 1px dashed #34B0EA;
+}
+.airlines-specials table td a:hover {
+  text-decoration: none;
+}
+.airlines-loyalty .item {
+  margin-bottom: 40px;
+}
+.airlines-loyalty .item h5 {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.airlines-loyalty .item p {
+  font-size: 13px;
+  line-height: 19px;
+  color: #333;
 }
