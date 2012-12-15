@@ -2,12 +2,15 @@
   display: block;
   clear: both;
 }
-.wrapper.airlines {
+.wrapper.airlines,
+.wrapper.planes {
   margin-bottom: 30px;
   margin-top: 20px;
 }
-.airlines ul {
+.airlines ul,
+.planes ul {
   -webkit-padding-start: 0;
+  -webkit-margin-before: 0;
 }
 .filter {
   margin-bottom: 10px;
@@ -27,10 +30,11 @@
   border-bottom: 1px dashed;
 }
 .sort {
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 .sort ul {
   list-style: none;
+  -webkit-margin-after: 0;
 }
 .sort ul li {
   display: inline-block;
@@ -61,15 +65,16 @@
 .sort ul .descending a {
   background: url(../images/ico-arrow-down.png) no-repeat center right;
 }
-.airlines-list {
+.airlines .items-list,
+.planes .items-list {
   list-style: none;
-  -webkit-margin-before: 0;
 }
-/* clearfix */
-.airlines-list li {
+.airlines .items-list li,
+.planes .items-list li {
   display: inline-block;
 }
-.airlines-list li:after {
+.airlines .items-list li:after,
+.planes .items-list li:after {
   content: "";
   display: block;
   height: 0;
@@ -77,50 +82,63 @@
   overflow: hidden;
   visibility: hidden;
 }
-.airlines-list li {
+.airlines .items-list li,
+.planes .items-list li {
   display: block;
   padding-bottom: 35px;
   border-bottom: 1px solid #e9eaea;
 }
-.airlines-list li .left {
+.airlines .items-list li .left,
+.planes .items-list li .left {
   width: 180px;
   float: left;
   text-align: center;
 }
-.airlines-list li .left img {
+.airlines .items-list li .left img,
+.planes .items-list li .left img {
   margin-top: 50px;
 }
-.airlines-list li .center {
+.airlines .items-list li .center,
+.planes .items-list li .center {
   width: 475px;
   float: left;
   padding-left: 20px;
 }
-.airlines-list li .center h3 {
+.airlines .items-list li .center h3,
+.planes .items-list li .center h3 {
   font-size: 24px;
   color: #333;
   margin: 40px 0 5px;
 }
-.airlines-list li .center h3 a {
+.airlines .items-list li .center h3 a,
+.planes .items-list li .center h3 a {
   text-decoration: underline;
 }
-.airlines-list li .center p {
+.airlines .items-list li .center p,
+.planes .items-list li .center p {
   font-size: 13px;
   color: #666;
 }
-.airlines-list li .center tr:first-child,
-.airlines-list li .center tr:last-child {
+.airlines .items-list li .center tr:first-child,
+.planes .items-list li .center tr:first-child,
+.airlines .items-list li .center tr:last-child,
+.planes .items-list li .center tr:last-child {
   border-bottom: 1px solid #e9eaea;
 }
-.airlines-list li .center table {
+.airlines .items-list li .center table,
+.planes .items-list li .center table {
   margin-bottom: 20px;
 }
-.airlines-list li .center tr th {
+.airlines .items-list li .center tr th,
+.planes .items-list li .center tr th {
   padding-left: 15px;
 }
-.airlines-list li .center tr:last-child td {
+.airlines .items-list li .center tr:last-child td,
+.planes .items-list li .center tr:last-child td {
   padding-bottom: 20px;
 }
-.airlines-list li .center tr td {
+.airlines .items-list li .center tr td,
+.planes .items-list li .center tr td {
   color: #333;
   font-size: 14px;
   padding: 12px 0px 12px 15px;
@@ -129,58 +147,72 @@
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.airlines-list li .center tr td:nth-child(1) {
+.airlines .items-list li .center tr td:nth-child(1),
+.planes .items-list li .center tr td:nth-child(1) {
   font-weight: bold;
 }
-.airlines-list li .center tr td:nth-child(2) {
+.airlines .items-list li .center tr td:nth-child(2),
+.planes .items-list li .center tr td:nth-child(2) {
   color: #34b0ea;
 }
-.airlines-list li .center tr td a {
+.airlines .items-list li .center tr td a,
+.planes .items-list li .center tr td a {
   font-weight: bold;
   border-bottom: 1px dashed #34b0ea;
 }
-.airlines-list li .center tr td a:hover {
+.airlines .items-list li .center tr td a:hover,
+.planes .items-list li .center tr td a:hover {
   text-decoration: none;
   border-bottom: none;
 }
-.airlines-list li .center > a {
+.airlines .items-list li .center > a,
+.planes .items-list li .center > a {
   margin-left: 15px;
   font-size: 13px;
 }
-.airlines-list li .right {
+.airlines .items-list li .right,
+.planes .items-list li .right {
   float: right;
   width: 125px;
   margin: 50px 80px 0 0;
   text-align: center;
 }
-.airlines-list li .right > a {
+.airlines .items-list li .right > a,
+.planes .items-list li .right > a {
   background: url(../images/ico-comments.png) no-repeat left center;
   padding: 0 0 0 20px;
   font-size: 13px;
 }
-.airlines .title h2 {
+.airlines .title h2,
+.planes .title h2 {
   font-size: 24px;
   color: #333;
 }
-.airlines .buttons {
+.airlines .buttons,
+.planes .buttons {
   margin-bottom: 30px;
 }
-.airlines .buttons button {
+.airlines .buttons button,
+.planes .buttons button {
   margin-right: -5px;
   padding: 11px 19px;
   cursor: pointer;
 }
-.airlines .buttons button:not(.active) {
+.airlines .buttons button:not(.active),
+.planes .buttons button:not(.active) {
   border: 1px solid #c0c0c0;
   border-bottom: 1px solid #d8d8d8;
 }
-.airlines .buttons button:hover:not(.active) {
+.airlines .buttons button:hover:not(.active),
+.planes .buttons button:hover:not(.active) {
   background: #e0e1e1;
 }
-.airlines .buttons .active span {
+.airlines .buttons button.active span,
+.planes .buttons button.active span {
   color: #eee;
 }
-.airlines .buttons button span {
+.airlines .buttons button span,
+.planes .buttons button span {
   color: #999;
 }
 .airlines .stars {
@@ -360,4 +392,140 @@
   font-size: 13px;
   line-height: 19px;
   color: #333;
+}
+.planes .buttons {
+  margin-bottom: 35px;
+}
+.planes .item-view .left {
+  text-align: left;
+}
+.planes .item-view .left img {
+  margin: 0 0 20px;
+  border-radius: 5px;
+}
+.planes .item-view .left span {
+  font-size: 13px;
+  color: #666;
+  font-style: italic;
+  display: block;
+}
+.planes .item-view .left span strong {
+  font-style: normal;
+  color: #333;
+  text-decoration: none;
+}
+.planes .item-view .left span strong.big {
+  font-size: 24px;
+  padding-left: 5px;
+}
+.planes .item-view .left span.rating {
+  margin-bottom: 15px;
+}
+.planes .item-view .left span.distance {
+  margin-bottom: 7px;
+}
+.planes .item-view .right .desc {
+  margin-top: 0;
+}
+.planes .item-view .right .use {
+  background: url(../images/ico-plane.png) no-repeat left center;
+  padding: 0 0 3px 27px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin-bottom: 20px;
+}
+.planes .item-view .right .companies ul {
+  -webkit-margin-before: 0;
+  -webkit-padding-start: 0;
+  list-style: none;
+  width: 285px;
+}
+.planes .item-view .right .companies ul li {
+  display: inline-block;
+  width: 125px;
+  margin-right: 15px;
+  line-height: 20px;
+}
+.planes .items-list li .right {
+  text-align: left;
+  width: 170px;
+}
+.planes .items-list li .right .rating {
+  font-size: 13px;
+  color: #666;
+  font-style: italic;
+  display: block;
+  margin-bottom: 10px;
+}
+.planes .items-list li .right .rating strong {
+  font-style: normal;
+  color: #333;
+  text-decoration: none;
+  font-size: 24px;
+  padding-left: 5px;
+}
+.planes .items-list li .right a {
+  display: block;
+  margin-bottom: 8px;
+}
+.planes .items-list li .right .comments {
+  background-image: url(../images/ico-comments.png);
+}
+.planes .items-list li .right .experts {
+  background-image: url(../images/ico-user.png);
+}
+.planes .items-list li .right .photos {
+  background-image: url(../images/ico-photo.png);
+}
+.planes .items-list li .right .videos {
+  background-image: url(../images/ico-video.png);
+}
+.planes .experts-opinions {
+  list-style: none;
+}
+.planes .experts-opinions li {
+  display: block;
+  margin-bottom: 30px;
+}
+.planes .experts-opinions li img {
+  float: left;
+  border-radius: 3px;
+  margin-right: 30px;
+}
+.planes .experts-opinions div {
+  position: relative;
+  width: 645px;
+  padding: 20px 30px;
+  background: #fbfbfb;
+  border: 1px solid #e5e5e5;
+  float: left;
+  border-radius: 3px;
+}
+.planes .experts-opinions div h5 {
+  font-size: 13px;
+  color: #333;
+  margin: 0 0 3px;
+}
+.planes .experts-opinions div i {
+  font-size: 13px;
+  color: #666;
+  display: block;
+  margin-bottom: 9px;
+}
+.planes .experts-opinions div p {
+  font-size: 13px;
+  color: #666;
+  line-height: 18px;
+  margin-bottom: 0;
+}
+.planes .experts-opinions div ins {
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 19px;
+  left: -10px;
+  top: 20px;
+  background: url(../images/ico-triangle-opinions.png);
 }
