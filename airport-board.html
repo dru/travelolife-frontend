@@ -27,54 +27,93 @@
                 </div>
                 <a href="#">Билеты</a>
                 <a href="#">Авиакомпании</a>
-                <a href="#" class="active">Самолеты</a>
-                <a href="#">Аэропорты</a>
+                <a href="#">Самолеты</a>
+                <a href="#" class="active">Аэропорты</a>
             </nav>
         </div>
     </header>
     <section>
-      <div class="wrapper planes">
+      <div class="wrapper airports">
         <div class="title">
-          <h2>Boeing B-737</h2>
+          <h2>Аэропорт Борисполь</h2>
         </div>
         <div class="buttons radio">
           <button><i></i>описание</button>
+          <button class="active"><i></i>табло аэропорта</button>
           <button><i></i>отзывы <span>45</span></button>
-          <button class="active"><i></i>мнение экспертов <span>8</span></button>
           <button><i></i>фото <span>7</span></button>
           <button><i></i>видео <span>2</span></button>
-          <button><i></i>характеристики</button>
         </div>
+        <div class="table-board">
 
-        <ul class="experts-opinions">
-          <li>
-            <img src="images/expert.jpg" alt="" />
-            <div>
-              <ins></ins>
-              <h5>Туполев Андрей Николаевич</h5>
-              <i>Авиаконструктор</i>
-              <p>Боинг-737 - самый популярный узкофюзеляжный реактивный пассажирский самолёт в мире! Помимо
-              этого Боинг-737 - самый массовый реактивный пассажирский самолёт за всю историю авиации: 6160
-              машин заказано и 5109 поставлено. До сих пор находится в производстве. Самолёт разработан
-              корпорацией Боинг, поставляется в серийное производство с 1967 года. Интересен тот факт, что 737-й
-              используется настолько широко, что в любой момент времени в воздухе находится в среднем 1250
-              самолётов этого типа, и каждые 5 секунд взлетает (и садится) ещё один самолёт.</p>
-            </div>
-            <del class="clr"></del>
-          </li>
-          <li>
-            <img src="images/expert.jpg" alt="" />
-            <div>
-              <ins></ins>
-              <h5>Туполев Андрей Николаевич</h5>
-              <i>Авиаконструктор</i>
-              <p>Боинг-737 - самый популярный узкофюзеляжный реактивный пассажирский самолёт в мире! Помимо
-              этого Боинг-737 - самый массовый реактивный пассажирский самолёт за всю историю авиации: 6160
-              машин заказано и 5109 поставлено. До сих пор находится в производстве.</p>
-            </div>
-            <del class="clr"></del>
-          </li>
-        </ul>
+          <table class="board">
+            <tr>
+              <th width="60">Рейс</th>
+              <th width="150">Направление</th>
+              <th colspan="2">Время местное</th>
+              <th width="180">Статус</th>
+              <th width="68">Терминал</th>
+            </tr>
+            <tr>
+              <th></th>
+              <th></th>
+              <th width="60">по расп.</th>
+              <th width="60">по факту</th>
+              <th></th>
+              <th></th>
+            </tr>
+            <tr>
+              <td><strong>OK 916</strong></td>
+              <td><strong>Москва</strong></td>
+              <td>18 авг, 14:20</td>
+              <td>14:20</td>
+              <td>летит</td>
+              <td>F</td>
+            </tr>
+            <tr>
+              <td><strong>OK 91623</strong></td>
+              <td><strong>Доминикана</strong></td>
+              <td>18 авг, 14:20</td>
+              <td>14:20</td>
+              <td>летит</td>
+              <td>F</td>
+            </tr>
+            <tr>
+              <td><strong>OK 9162</strong></td>
+              <td><strong>Лос Анджелес</strong></td>
+              <td></td>
+              <td>14:20</td>
+              <td><span class="waiting">ожидается в <strong>16:04</strong></span></td>
+              <td>F</td>
+            </tr>
+            <tr>
+              <td><strong>OK 9216</strong></td>
+              <td><strong>Москва</strong></td>
+              <td>18 авг, 14:20</td>
+              <td>14:20</td>
+              <td>летит</td>
+              <td>F</td>
+            </tr>
+            <tr>
+              <td><strong>OK 916</strong></td>
+              <td><strong>Москва</strong></td>
+              <td></td>
+              <td>14:20</td>
+              <td><span class="cancel">отменён</span></td>
+              <td>F</td>
+            </tr>
+            <tr>
+              <td><strong>OK 916</strong></td>
+              <td><strong>Москва</strong></td>
+              <td>18 авг, 14:20</td>
+              <td>14:20</td>
+              <td>летит</td>
+              <td>F</td>
+            </tr>
+          </table>
+
+          <a href="#" class="more">Еще рейсы</a>
+        </div>
       </div>
     </section>
     <footer>

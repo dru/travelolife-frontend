@@ -11,10 +11,10 @@
 /* IMPORTANT - Change '#myGallery' to the ID of your gallery list to prevent a flash of unstyled content */
 #myGallery { display: none; }
 
-.gv_galleryWrap { position: relative; font-size: 10pt; }
+.gv_galleryWrap { position: relative; font-size: 10pt; padding: 0 !important;}
 
 /* GALLERY DIV */
-.gv_gallery { overflow: hidden; position: relative;}
+.gv_gallery { overflow: hidden; position: relative; height: 535px !important;}
 
 .gv_imageStore { visibility: hidden; position: absolute; top: -10000px; left: -10000px; }
 
@@ -25,19 +25,18 @@
 
 .gv_panelWrap { filter: inherit; position: absolute; overflow: hidden; }
 
-.gv_panel-loading { background: url(img-loader.gif) 50% 50% no-repeat #aaa; }
-.gv_frame-loading { background: url(img-loader.gif) 50% 50% no-repeat #aaa; }
+.gv_panel-loading { background: url(../images/img-loader.gif) 50% 50% no-repeat #aaa; }
+.gv_frame-loading { background: url(../images/img-loader.gif) 50% 50% no-repeat #aaa; }
 
 /* GALLERY PANELS */
 .gv_panel { filter: inherit; position: absolute; top: 0; left: 0; overflow: hidden; z-index: 100; }
-.gv_panel img { position: absolute; }
+.gv_panel img { position: absolute; border-radius: 4px;}
 
 .gv_overlay { position: absolute; background: #222; color: white; z-index: 200; }
 .gv_showOverlay { 
 	position: absolute; 
 	width: 20px; 
-	height: 20px; 
-	background: url(themes/light/info.png) #222; 
+	height: 20px;
 	cursor: pointer;
 	z-index: 200;
 }
@@ -131,33 +130,30 @@
 
 .gv_panelNavPrev:hover,
 .gv_panelNavNext:hover {
-	opacity: 0.9;
-	-moz-opacity: 0.9;
-	-khtml-opacity: 0.9;
-	filter:alpha(opacity=90);
+	opacity: 1;
 }
 
 .gv_navPlay {
 	height: 30px;
 	width: 30px;
 	cursor: pointer;
-	background: url(themes/light/play-big.png) top left no-repeat;
 }
 .gv_navPause {
 	height: 30px;
 	width: 30px;
 	cursor: pointer;
-	background: url(themes/light/pause-big.png) top left no-repeat;
 }
 .gv_navNext {
-	height: 52px;
-	width: 52px;
+	height: 1px;
+	width: 1px;
+	display: none;
 	cursor: pointer;
 	background: url(../images/btn-gallery-next.png) top left no-repeat;
 }
 .gv_navPrev {
-	height: 52px;
-	width: 52px;
+	height: 1px;
+	width: 1px;
+	display: none;
 	cursor: pointer;
 	background: url(../images/btn-gallery-prev.png) top right no-repeat;
 }
@@ -165,11 +161,15 @@
 	height: 52px;
 	width: 52px;
 	cursor: pointer;
+	opacity: 0.7;
+	display: block !important;
 	background: url(../images/btn-gallery-next.png) top left no-repeat;
 }
 .gv_panelNavPrev {
 	height: 52px;
 	width: 52px;
 	cursor: pointer;
+	opacity: 0.7;
+	display: block !important;
 	background: url(../images/btn-gallery-prev.png) top right no-repeat;
 }

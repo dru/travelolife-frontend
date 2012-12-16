@@ -3,14 +3,17 @@
   clear: both;
 }
 .wrapper.airlines,
-.wrapper.planes {
+.wrapper.planes,
+.wrapper.airports {
   margin-bottom: 30px;
   margin-top: 20px;
 }
 .airlines ul,
-.planes ul {
+.planes ul,
+.airports ul {
   -webkit-padding-start: 0;
   -webkit-margin-before: 0;
+  padding-left: 0;
 }
 .filter {
   margin-bottom: 10px;
@@ -19,7 +22,6 @@
   font-size: 13px;
 }
 .filter .details {
-  padding-right: 12px;
   border: 0px;
   font-weight: bold;
 }
@@ -27,7 +29,8 @@
   text-decoration: none;
 }
 .filter .details span {
-  border-bottom: 1px dashed;
+  border-bottom: 1px dashed #34B0EA;
+  padding-right: 12px;
 }
 .sort {
   margin-bottom: 0px;
@@ -66,15 +69,18 @@
   background: url(../images/ico-arrow-down.png) no-repeat center right;
 }
 .airlines .items-list,
-.planes .items-list {
+.planes .items-list,
+.airports .items-list {
   list-style: none;
 }
 .airlines .items-list li,
-.planes .items-list li {
+.planes .items-list li,
+.airports .items-list li {
   display: inline-block;
 }
 .airlines .items-list li:after,
-.planes .items-list li:after {
+.planes .items-list li:after,
+.airports .items-list li:after {
   content: "";
   display: block;
   height: 0;
@@ -83,62 +89,75 @@
   visibility: hidden;
 }
 .airlines .items-list li,
-.planes .items-list li {
+.planes .items-list li,
+.airports .items-list li {
   display: block;
   padding-bottom: 35px;
   border-bottom: 1px solid #e9eaea;
 }
 .airlines .items-list li .left,
-.planes .items-list li .left {
+.planes .items-list li .left,
+.airports .items-list li .left {
   width: 180px;
   float: left;
   text-align: center;
 }
 .airlines .items-list li .left img,
-.planes .items-list li .left img {
+.planes .items-list li .left img,
+.airports .items-list li .left img {
   margin-top: 50px;
 }
 .airlines .items-list li .center,
-.planes .items-list li .center {
+.planes .items-list li .center,
+.airports .items-list li .center {
   width: 475px;
   float: left;
   padding-left: 20px;
 }
 .airlines .items-list li .center h3,
-.planes .items-list li .center h3 {
+.planes .items-list li .center h3,
+.airports .items-list li .center h3 {
   font-size: 24px;
   color: #333;
   margin: 40px 0 5px;
 }
 .airlines .items-list li .center h3 a,
-.planes .items-list li .center h3 a {
+.planes .items-list li .center h3 a,
+.airports .items-list li .center h3 a {
   text-decoration: underline;
 }
 .airlines .items-list li .center p,
-.planes .items-list li .center p {
+.planes .items-list li .center p,
+.airports .items-list li .center p {
   font-size: 13px;
   color: #666;
 }
 .airlines .items-list li .center tr:first-child,
 .planes .items-list li .center tr:first-child,
+.airports .items-list li .center tr:first-child,
 .airlines .items-list li .center tr:last-child,
-.planes .items-list li .center tr:last-child {
+.planes .items-list li .center tr:last-child,
+.airports .items-list li .center tr:last-child {
   border-bottom: 1px solid #e9eaea;
 }
 .airlines .items-list li .center table,
-.planes .items-list li .center table {
+.planes .items-list li .center table,
+.airports .items-list li .center table {
   margin-bottom: 20px;
 }
 .airlines .items-list li .center tr th,
-.planes .items-list li .center tr th {
+.planes .items-list li .center tr th,
+.airports .items-list li .center tr th {
   padding-left: 15px;
 }
 .airlines .items-list li .center tr:last-child td,
-.planes .items-list li .center tr:last-child td {
+.planes .items-list li .center tr:last-child td,
+.airports .items-list li .center tr:last-child td {
   padding-bottom: 20px;
 }
 .airlines .items-list li .center tr td,
-.planes .items-list li .center tr td {
+.planes .items-list li .center tr td,
+.airports .items-list li .center tr td {
   color: #333;
   font-size: 14px;
   padding: 12px 0px 12px 15px;
@@ -148,71 +167,85 @@
   overflow: hidden;
 }
 .airlines .items-list li .center tr td:nth-child(1),
-.planes .items-list li .center tr td:nth-child(1) {
+.planes .items-list li .center tr td:nth-child(1),
+.airports .items-list li .center tr td:nth-child(1) {
   font-weight: bold;
 }
 .airlines .items-list li .center tr td:nth-child(2),
-.planes .items-list li .center tr td:nth-child(2) {
+.planes .items-list li .center tr td:nth-child(2),
+.airports .items-list li .center tr td:nth-child(2) {
   color: #34b0ea;
 }
 .airlines .items-list li .center tr td a,
-.planes .items-list li .center tr td a {
+.planes .items-list li .center tr td a,
+.airports .items-list li .center tr td a {
   font-weight: bold;
   border-bottom: 1px dashed #34b0ea;
 }
 .airlines .items-list li .center tr td a:hover,
-.planes .items-list li .center tr td a:hover {
+.planes .items-list li .center tr td a:hover,
+.airports .items-list li .center tr td a:hover {
   text-decoration: none;
   border-bottom: none;
 }
 .airlines .items-list li .center > a,
-.planes .items-list li .center > a {
+.planes .items-list li .center > a,
+.airports .items-list li .center > a {
   margin-left: 15px;
   font-size: 13px;
 }
 .airlines .items-list li .right,
-.planes .items-list li .right {
+.planes .items-list li .right,
+.airports .items-list li .right {
   float: right;
   width: 125px;
   margin: 50px 80px 0 0;
   text-align: center;
 }
 .airlines .items-list li .right > a,
-.planes .items-list li .right > a {
+.planes .items-list li .right > a,
+.airports .items-list li .right > a {
   background: url(../images/ico-comments.png) no-repeat left center;
   padding: 0 0 0 20px;
   font-size: 13px;
 }
 .airlines .title h2,
-.planes .title h2 {
+.planes .title h2,
+.airports .title h2 {
   font-size: 24px;
   color: #333;
 }
 .airlines .buttons,
-.planes .buttons {
+.planes .buttons,
+.airports .buttons {
   margin-bottom: 30px;
 }
 .airlines .buttons button,
-.planes .buttons button {
+.planes .buttons button,
+.airports .buttons button {
   margin-right: -5px;
   padding: 11px 19px;
   cursor: pointer;
 }
 .airlines .buttons button:not(.active),
-.planes .buttons button:not(.active) {
+.planes .buttons button:not(.active),
+.airports .buttons button:not(.active) {
   border: 1px solid #c0c0c0;
   border-bottom: 1px solid #d8d8d8;
 }
 .airlines .buttons button:hover:not(.active),
-.planes .buttons button:hover:not(.active) {
+.planes .buttons button:hover:not(.active),
+.airports .buttons button:hover:not(.active) {
   background: #e0e1e1;
 }
 .airlines .buttons button.active span,
-.planes .buttons button.active span {
+.planes .buttons button.active span,
+.airports .buttons button.active span {
   color: #eee;
 }
 .airlines .buttons button span,
-.planes .buttons button span {
+.planes .buttons button span,
+.airports .buttons button span {
   color: #999;
 }
 .airlines .stars {
@@ -393,41 +426,51 @@
   line-height: 19px;
   color: #333;
 }
-.planes .buttons {
+.planes .buttons,
+.airports .buttons {
   margin-bottom: 35px;
 }
-.planes .item-view .left {
+.planes .item-view .left,
+.airports .item-view .left {
   text-align: left;
 }
-.planes .item-view .left img {
+.planes .item-view .left img,
+.airports .item-view .left img {
   margin: 0 0 20px;
   border-radius: 5px;
 }
-.planes .item-view .left span {
+.planes .item-view .left span,
+.airports .item-view .left span {
   font-size: 13px;
   color: #666;
   font-style: italic;
   display: block;
 }
-.planes .item-view .left span strong {
+.planes .item-view .left span strong,
+.airports .item-view .left span strong {
   font-style: normal;
   color: #333;
   text-decoration: none;
 }
-.planes .item-view .left span strong.big {
+.planes .item-view .left span strong.big,
+.airports .item-view .left span strong.big {
   font-size: 24px;
   padding-left: 5px;
 }
-.planes .item-view .left span.rating {
+.planes .item-view .left span.rating,
+.airports .item-view .left span.rating {
   margin-bottom: 15px;
 }
-.planes .item-view .left span.distance {
+.planes .item-view .left span.distance,
+.airports .item-view .left span.distance {
   margin-bottom: 7px;
 }
-.planes .item-view .right .desc {
+.planes .item-view .right .desc,
+.airports .item-view .right .desc {
   margin-top: 0;
 }
-.planes .item-view .right .use {
+.planes .item-view .right .use,
+.airports .item-view .right .use {
   background: url(../images/ico-plane.png) no-repeat left center;
   padding: 0 0 3px 27px;
   font-size: 16px;
@@ -436,65 +479,79 @@
   display: block;
   margin-bottom: 20px;
 }
-.planes .item-view .right .companies ul {
+.planes .item-view .right .companies ul,
+.airports .item-view .right .companies ul {
   -webkit-margin-before: 0;
   -webkit-padding-start: 0;
   list-style: none;
   width: 285px;
 }
-.planes .item-view .right .companies ul li {
+.planes .item-view .right .companies ul li,
+.airports .item-view .right .companies ul li {
   display: inline-block;
   width: 125px;
   margin-right: 15px;
   line-height: 20px;
 }
-.planes .items-list li .right {
+.planes .items-list li .right,
+.airports .items-list li .right {
   text-align: left;
   width: 170px;
 }
-.planes .items-list li .right .rating {
+.planes .items-list li .right .rating,
+.airports .items-list li .right .rating {
   font-size: 13px;
   color: #666;
   font-style: italic;
   display: block;
   margin-bottom: 10px;
 }
-.planes .items-list li .right .rating strong {
+.planes .items-list li .right .rating strong,
+.airports .items-list li .right .rating strong {
   font-style: normal;
   color: #333;
   text-decoration: none;
   font-size: 24px;
   padding-left: 5px;
 }
-.planes .items-list li .right a {
+.planes .items-list li .right a,
+.airports .items-list li .right a {
   display: block;
   margin-bottom: 8px;
 }
-.planes .items-list li .right .comments {
+.planes .items-list li .right .comments,
+.airports .items-list li .right .comments {
   background-image: url(../images/ico-comments.png);
 }
-.planes .items-list li .right .experts {
+.planes .items-list li .right .experts,
+.airports .items-list li .right .experts {
   background-image: url(../images/ico-user.png);
 }
-.planes .items-list li .right .photos {
+.planes .items-list li .right .photos,
+.airports .items-list li .right .photos {
   background-image: url(../images/ico-photo.png);
 }
-.planes .items-list li .right .videos {
+.planes .items-list li .right .videos,
+.airports .items-list li .right .videos {
   background-image: url(../images/ico-video.png);
 }
-.planes .experts-opinions {
+.planes .experts-opinions,
+.airports .experts-opinions {
   list-style: none;
 }
-.planes .experts-opinions li {
+.planes .experts-opinions li,
+.airports .experts-opinions li {
   display: block;
   margin-bottom: 30px;
 }
-.planes .experts-opinions li img {
+.planes .experts-opinions li img,
+.airports .experts-opinions li img {
   float: left;
   border-radius: 3px;
   margin-right: 30px;
 }
-.planes .experts-opinions div {
+.planes .experts-opinions div,
+.airports .experts-opinions div {
   position: relative;
   width: 645px;
   padding: 20px 30px;
@@ -503,24 +560,28 @@
   float: left;
   border-radius: 3px;
 }
-.planes .experts-opinions div h5 {
+.planes .experts-opinions div h5,
+.airports .experts-opinions div h5 {
   font-size: 13px;
   color: #333;
   margin: 0 0 3px;
 }
-.planes .experts-opinions div i {
+.planes .experts-opinions div i,
+.airports .experts-opinions div i {
   font-size: 13px;
   color: #666;
   display: block;
   margin-bottom: 9px;
 }
-.planes .experts-opinions div p {
+.planes .experts-opinions div p,
+.airports .experts-opinions div p {
   font-size: 13px;
   color: #666;
   line-height: 18px;
   margin-bottom: 0;
 }
-.planes .experts-opinions div ins {
+.planes .experts-opinions div ins,
+.airports .experts-opinions div ins {
   display: block;
   position: absolute;
   width: 10px;
@@ -528,4 +589,163 @@
   left: -10px;
   top: 20px;
   background: url(../images/ico-triangle-opinions.png);
+}
+.planes .plane-videos,
+.airports .plane-videos {
+  list-style: none;
+}
+.planes .plane-videos li,
+.airports .plane-videos li {
+  display: block;
+  float: left;
+  width: 300px;
+  margin: 0 15px 20px 0;
+}
+.planes .plane-videos li h5,
+.airports .plane-videos li h5 {
+  font-size: 16px;
+  color: #333;
+  margin: 0 0 15px;
+}
+.planes .plane-videos li div,
+.airports .plane-videos li div {
+  width: 300px;
+  height: 200px;
+  position: relative;
+}
+.planes .plane-videos li div img,
+.airports .plane-videos li div img {
+  border-radius: 4px;
+}
+.planes .plane-videos li div a,
+.airports .plane-videos li div a {
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(../images/btn-play.png) no-repeat center center;
+}
+.planes .plane-videos li div a:hover,
+.airports .plane-videos li div a:hover {
+  background: url(../images/btn-play-hover.png) no-repeat center center;
+}
+.planes .plane-videos li p,
+.airports .plane-videos li p {
+  font-size: 13px;
+  color: #666;
+  display: block;
+  padding-left: 5px;
+}
+.planes .plane-videos li:nth-child(3n),
+.airports .plane-videos li:nth-child(3n) {
+  margin-right: 0;
+}
+.planes .techs .item,
+.airports .techs .item {
+  margin-bottom: 20px;
+}
+.planes .techs .item h5,
+.airports .techs .item h5 {
+  font-size: 18px;
+  margin: 0 0 10px;
+}
+.planes .techs .item p,
+.airports .techs .item p {
+  margin: 0 0 5px;
+}
+.airports .filter p {
+  display: inline-block;
+  margin-right: 10px;
+}
+.airports .items-list li .center p {
+  padding-right: 20px;
+}
+.airports .items-list li .right {
+  width: 185px;
+}
+.airports .items-list li .right span {
+  font-size: 13px;
+  color: #666;
+  font-style: italic;
+  display: block;
+  margin-bottom: 10px;
+}
+.airports .items-list li .right span .big {
+  font-size: 12px;
+}
+.airports .item-view .left .distance .big {
+  font-size: 13px;
+}
+.airports .item-view .left p {
+  color: #333;
+  font-size: 13px;
+  line-height: 18px;
+}
+.airports .item-view .left a {
+  display: block;
+  float: none;
+}
+.airports .item-view .left a:not(.comments) {
+  display: block;
+  background: none;
+  padding-left: 0;
+}
+.airports .item-view .right .item {
+  margin-bottom: 20px;
+}
+.airports .item-view .right .item i {
+  font-size: 13px;
+  color: #666;
+  display: block;
+  margin-bottom: 7px;
+}
+.airports .item-view .right .item p {
+  margin: 0;
+  display: block;
+  line-height: 20px;
+  font-size: 13px;
+  color: #333;
+}
+.airports .table-board {
+  text-align: center;
+}
+.airports .table-board .board {
+  margin-bottom: 30px;
+}
+.airports .table-board .board td,
+.airports .table-board .board th {
+  padding: 15px;
+  text-align: left;
+}
+.airports .table-board .board tr:nth-child(1) th {
+  padding-bottom: 0;
+}
+.airports .table-board .board tr:nth-child(2) th {
+  border-bottom: 1px solid #bec1c2;
+  padding-top: 5px;
+}
+.airports .table-board .board tr td {
+  border-bottom: 1px solid #e9eaea;
+  font-size: 14px;
+}
+.airports .table-board .board tr:nth-child(2) th {
+  font-size: 11px;
+}
+.airports .table-board .board .waiting {
+  color: #fba81c;
+  font-weight: bold;
+}
+.airports .table-board .board .waiting strong {
+  color: #333;
+}
+.airports .table-board .board .cancel {
+  color: #eb413c;
+  font-weight: bold;
+}
+.airports .table-board .more {
+  background: url(../images/refresh.png) no-repeat left center;
+  padding: 3px 0 2px 30px;
+  text-decoration: none;
 }
