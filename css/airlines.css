@@ -749,3 +749,74 @@
   padding: 3px 0 2px 30px;
   text-decoration: none;
 }
+.faq .left {
+  width: 282px;
+  float: left;
+}
+.faq .left ul {
+  list-style: none;
+  padding: 0;
+}
+.faq .left ul li {
+  height: 100px;
+  cursor: pointer;
+  display: block;
+}
+.faq .left ul li div {
+  background-repeat: no-repeat;
+  background-position: 15px 28px;
+  height: 100px;
+}
+.faq .left ul li div h3 {
+  width: 165px;
+  padding: 25px 0 0 70px;
+  margin: 0 0 3px;
+}
+.faq .left ul li div p {
+  padding: 0 0 0 70px;
+  margin: 0;
+  color: #828282;
+  font-size: 13px;
+}
+.faq .left ul li:nth-of-type(1) div {
+  background-image: url(../images/ico-eticket.png);
+}
+.faq .left ul li:nth-of-type(2) div {
+  background-image: url(../images/ico-cal.png);
+}
+.faq .left ul li:nth-of-type(2) div h3 {
+  padding-top: 15px;
+}
+.faq .left ul li:nth-of-type(3) div {
+  background-image: url(../images/ico-refund.png);
+}
+.faq .left ul li.active {
+  background: url(../images/bg-faq-menu-active.png) no-repeat;
+}
+.faq .right {
+  width: 635px;
+  float: right;
+  margin-top: 15px;
+}
+.faq .right .item {
+  margin-bottom: 15px;
+}
+.faq .right .item a {
+  font-size: 22px;
+  font-weight: bold;
+  border-bottom: 1px dashed #34b0ec;
+}
+.faq .right .item a:hover {
+  text-decoration: none;
+}
+.faq .right .item .answer {
+  display: none;
+}
+.faq .right .item .answer p {
+  font-size: 13px;
+  color: #8e8e8e;
+}
+.faq .right .item.active a {
+  color: #000;
+  border-color: #000;
+}
