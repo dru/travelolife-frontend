@@ -831,3 +831,89 @@
   color: #000;
   border-color: #000;
 }
+.profile-info {
+  height: 90px;
+}
+.profile-info .left {
+  float: left;
+}
+.profile-info .left img {
+  float: left;
+  margin: 8px 10px 0 0;
+  border-radius: 3px;
+}
+.profile-info .left h4 {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  margin: 10px 0 5px 0;
+  font-size: 16px;
+  color: #333;
+  width: 390px;
+}
+.profile-info .left h4 a {
+  font-size: 11px;
+  font-weight: normal;
+  border-bottom: 1px dashed #34b0ea;
+  margin-left: 10px;
+}
+.profile-info .left h4 a:hover {
+  text-decoration: none;
+}
+.profile-info .left .email {
+  color: #34b0ea;
+  font-size: 13px;
+  font-weight: bold;
+}
+.profile-info .left p {
+  font-weight: bold;
+  margin: 1px 0 0;
+  color: rgba(51, 51, 51, 0.6);
+  font-size: 13px;
+}
+.profile-info .right {
+  float: right;
+}
+.profile-info .right img {
+  float: right;
+  margin: 6px 0 0 0;
+}
+.profile-info .right div {
+  float: right;
+  width: 100px;
+  margin-top: 2px;
+}
+.profile-info .right div p {
+  font-size: 13px;
+  color: #333;
+  margin-bottom: 3px;
+}
+.profile-info .right div p strong {
+  display: block;
+  line-height: 14px;
+}
+.profile-info .right div a {
+  font-size: 11px;
+  font-weight: bold;
+}
+.profile-info .right div a:hover {
+  text-decoration: none;
+}
+.profile h2 {
+  font-size: 16px;
+  color: #333;
+  margin: 18px 0 30px 0;
+}
+.profile .found-tickets .ticket {
+  position: relative;
+}
+.profile .found-tickets .ticket .btn-cancel {
+  position: absolute;
+  right: -147px;
+  top: 20px;
+  font-size: 12px;
+  color: #FF0721;
+  font-weight: bold;
+  width: 90px;
+  background: url(../images/ico-cancel.png) no-repeat left center;
+  padding: 0 0 0 45px;
+}
