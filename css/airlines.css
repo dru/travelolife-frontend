@@ -761,34 +761,43 @@
   height: 100px;
   cursor: pointer;
   display: block;
+  position: relative;
 }
-.faq .left ul li div {
-  background-repeat: no-repeat;
-  background-position: 15px 28px;
-  height: 100px;
-}
-.faq .left ul li div h3 {
+.faq .left ul li h3 {
   width: 165px;
   padding: 25px 0 0 70px;
   margin: 0 0 3px;
 }
-.faq .left ul li div p {
+.faq .left ul li p {
   padding: 0 0 0 70px;
   margin: 0;
   color: #828282;
   font-size: 13px;
+  width: 165px;
 }
-.faq .left ul li:nth-of-type(1) div {
-  background-image: url(../images/ico-eticket.png);
+.faq .left ul li i {
+  position: absolute;
+  display: block;
+  top: 28px;
+  left: 15px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #ffa913;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
-.faq .left ul li:nth-of-type(2) div {
-  background-image: url(../images/ico-cal.png);
+.faq .left ul li i.faq-icon-calendar {
+  background-image: url('../static/faq-icon-calendar.png');
 }
-.faq .left ul li:nth-of-type(2) div h3 {
+.faq .left ul li i.faq-icon-ticket {
+  background-image: url('../static/faq-icon-ticket.png');
+}
+.faq .left ul li i.faq-icon-refresh {
+  background-image: url('../static/faq-icon-refresh.png');
+}
+.faq .left ul li:nth-of-type(2) h3 {
   padding-top: 15px;
-}
-.faq .left ul li:nth-of-type(3) div {
-  background-image: url(../images/ico-refund.png);
 }
 .faq .left ul li.active {
   background: url(../images/bg-faq-menu-active.png) no-repeat;
