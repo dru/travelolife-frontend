@@ -898,15 +898,23 @@
 .profile-info .right div a:hover {
   text-decoration: none;
 }
-.profile h2 {
+.profile h2,
+.flight-map h2 {
   font-size: 16px;
   color: #333;
-  margin: 18px 0 30px 0;
+  margin: 18px 0 0 0;
 }
-.profile .found-tickets .ticket {
+.profile .found-tickets,
+.flight-map .found-tickets {
+  margin: 15px 0 30px;
+}
+.profile .found-tickets .ticket,
+.flight-map .found-tickets .ticket {
   position: relative;
+  margin: 0;
 }
-.profile .found-tickets .ticket .btn-cancel {
+.profile .found-tickets .ticket .btn-cancel,
+.flight-map .found-tickets .ticket .btn-cancel {
   position: absolute;
   right: -147px;
   top: 20px;
@@ -916,4 +924,207 @@
   width: 90px;
   background: url(../images/ico-cancel.png) no-repeat left center;
   padding: 0 0 0 45px;
+}
+.profile .found-tickets .ticket .information,
+.flight-map .found-tickets .ticket .information {
+  padding: 20px 40px 30px 0;
+}
+.profile .found-tickets .ticket .info,
+.flight-map .found-tickets .ticket .info {
+  margin: 20px 30px 10px;
+}
+.profile .found-tickets .ticket .info .booked,
+.flight-map .found-tickets .ticket .info .booked {
+  float: left;
+  background: #ffa913;
+  padding: 8px 15px;
+  font-size: 14px;
+  color: #fff;
+  text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  margin: 1px 30px 0 0;
+}
+.profile .found-tickets .ticket .info p,
+.flight-map .found-tickets .ticket .info p {
+  float: left;
+  margin: 10px 5px 0 0;
+  font-size: 12px;
+  color: #666;
+}
+.profile .found-tickets .ticket .info .btn,
+.flight-map .found-tickets .ticket .info .btn {
+  font-size: 13px;
+  color: #666;
+  padding: 9px 10px 9px 27px;
+  border: 1px solid #e5e5e5;
+  float: left;
+  background-repeat: no-repeat;
+  background-position: 8px 10px;
+}
+.profile .found-tickets .ticket .info .btn.print,
+.flight-map .found-tickets .ticket .info .btn.print {
+  background-image: url(../images/ico-print.png);
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.profile .found-tickets .ticket .info .btn.download,
+.flight-map .found-tickets .ticket .info .btn.download {
+  background-image: url(../images/ico-download.png);
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-left: none;
+  margin-right: 30px;
+}
+.profile .found-tickets .ticket .info .pay,
+.flight-map .found-tickets .ticket .info .pay {
+  font-size: 12px;
+  border-bottom: 1px dashed #34b0ea;
+  margin-top: 10px;
+  float: left;
+}
+.profile .found-tickets .ticket .info .pay:hover,
+.flight-map .found-tickets .ticket .info .pay:hover {
+  text-decoration: none;
+}
+.profile table.history,
+.flight-map table.history {
+  margin-bottom: 40px;
+}
+.profile table.history tr:first-child,
+.flight-map table.history tr:first-child {
+  border-bottom: 1px solid #EAEAEA;
+}
+.profile table.history th,
+.flight-map table.history th,
+.profile table.history td,
+.flight-map table.history td {
+  padding: 15px 20px;
+}
+.profile table.history td,
+.flight-map table.history td {
+  font-size: 14px;
+  color: #666;
+}
+.profile table.history td strong,
+.flight-map table.history td strong {
+  color: #333;
+  line-height: 14px;
+}
+.profile table.history td strong i,
+.flight-map table.history td strong i {
+  display: inline-block;
+  width: 19px;
+  height: 17px;
+  margin: 0 5px -4px 7px;
+}
+.profile table.history td a,
+.flight-map table.history td a {
+  font-style: italic;
+  font-size: 11px;
+  border-bottom: 1px dashed #34b0ea;
+  margin-left: 5px;
+}
+.profile table.history td a:hover,
+.flight-map table.history td a:hover {
+  text-decoration: none;
+}
+.flight-map h1 {
+  float: left;
+}
+.flight-map .add-flight {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  color: #333;
+  float: right;
+  background-image: linear-gradient(bottom, #f5f5f5 24%, #ffffff 72%);
+  background-image: -o-linear-gradient(bottom, #f5f5f5 24%, #ffffff 72%);
+  background-image: -moz-linear-gradient(bottom, #f5f5f5 24%, #ffffff 72%);
+  background-image: -webkit-linear-gradient(bottom, #f5f5f5 24%, #ffffff 72%);
+  background-image: -ms-linear-gradient(bottom, #f5f5f5 24%, #ffffff 72%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.24, #f5f5f5), color-stop(0.72, #ffffff));
+  padding: 7px 10px;
+  border-top: 1px solid #c0c0c0;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-bottom: 1px solid #d8d8d8;
+  border-radius: 3px;
+  margin: 16px 20px 0 0;
+}
+.flight-map .add-flight span {
+  background: url(../images/ico-plus-dark.png) no-repeat left center;
+  padding-left: 20px;
+}
+.flight-map .map {
+  border-radius: 3px;
+  margin: 10px 0 40px;
+  float: left;
+}
+.flight-map .stat {
+  float: right;
+  width: 200px;
+  height: 301px;
+  padding: 19px;
+  background: #fbfbfb;
+  border: 1px solid #f2f2f2;
+  border-radius: 3px;
+  margin: 9px 0 40px;
+  position: relative;
+}
+.flight-map .stat .social {
+  position: absolute;
+  bottom: 20px;
+}
+.flight-map .stat .social strong {
+  font-size: 13px;
+  float: left;
+  margin-right: 7px;
+  color: #333;
+}
+.flight-map .stat .social a {
+  display: block;
+  float: left;
+  margin-right: 5px;
+  width: 16px;
+  height: 16px;
+}
+.flight-map .stat .social a.twitter {
+  background: url(../images/ico-twitter.png);
+}
+.flight-map .stat .social a.facebook {
+  background: url(../images/ico-facebook.png);
+}
+.flight-map .stat .social a.vkontakte {
+  background: url(../images/ico-vk.png);
+}
+.flight-map .stat h4 {
+  font-size: 16px;
+  margin: 0 0 10px;
+}
+.flight-map .stat p {
+  font-style: italic;
+  font-size: 12px;
+  color: #666;
+  line-height: 18px;
+  margin: 0 0 6px;
+}
+.flight-map .stat p strong {
+  font-style: normal;
+  font-size: 13px;
+  color: #333;
+  padding-left: 2px;
+}
+.flight-map table.history td {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.flight-map table.history .delete {
+  display: block;
+  width: 8px;
+  height: 8px;
+  background: url(../images/ico-delete.png) no-repeat;
+  border-bottom: none;
+}
+.flight-map table.history .delete:hover {
+  text-decoration: none;
 }

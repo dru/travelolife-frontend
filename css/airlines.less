@@ -1,0 +1,1292 @@
+@link: #34b0ea;
+
+.clr {
+  display: block;
+  clear: both;
+}
+
+.wrapper.airlines,
+.wrapper.planes,
+.wrapper.airports {
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.airlines ul,
+.planes ul,
+.airports ul {
+  -webkit-padding-start: 0;
+  -webkit-margin-before: 0;
+  padding-left: 0;
+}
+
+.filter {
+  margin-bottom: 10px;
+}
+
+  .filter p {
+    font-size: 13px;
+  }
+
+  .filter .details {
+    border: 0px;
+    font-weight: bold;
+  }
+
+  .filter .details:hover {
+    text-decoration: none;
+  }
+
+  .filter .details span {
+    border-bottom: 1px dashed #34B0EA;
+    padding-right: 12px;
+  }
+
+.sort {
+  margin-bottom: 0px;
+}
+
+  .sort ul {
+    list-style: none;
+    -webkit-margin-after: 0;
+  }
+
+    .sort ul li {
+      display: inline-block;
+      margin-right: 7px;
+    }
+
+      .sort ul li a {
+        font-size: 11px;
+        color: #666;
+        border-bottom: 1px dashed #666;
+      }
+
+        .sort ul li a:hover {
+          text-decoration: none;
+          border-bottom: none;
+        }
+
+    .sort ul .active {
+      background: #939698;
+      padding: 0px 5px 2px;
+      border-radius: 3px;
+    }
+
+      .sort ul .active a {
+        border-bottom: none;
+        color: #fff;
+        padding-right: 9px;
+      }
+
+    .sort ul .ascending a {
+      background: url(../images/ico-arrow-top.png) no-repeat center right;
+    }
+
+    .sort ul .descending a {
+      background: url(../images/ico-arrow-down.png) no-repeat center right;
+    }
+
+.airlines,
+.planes,
+.airports {
+  .items-list {
+    list-style: none;
+
+    li {
+      display: inline-block;
+
+      &:after {
+        content: "";
+        display: block;
+        height: 0;
+        clear: both;
+        overflow: hidden;
+        visibility: hidden;
+      }
+    }
+
+    li {
+      display: block;
+      padding-bottom: 35px;
+      border-bottom: 1px solid #e9eaea;
+
+      .left {
+        width: 180px;
+        float: left;
+        text-align: center;
+
+        img {
+          margin-top: 50px;
+        }
+      }
+
+      .center {
+        width: 475px;
+        float: left;
+        padding-left: 20px;
+
+        h3 {
+          font-size: 24px;
+          color: #333;
+          margin: 40px 0 5px;
+
+          a {
+            text-decoration: underline;
+          }
+        }
+
+        p {
+          font-size: 13px;
+          color: #666;
+        }
+
+        tr:first-child,
+        tr:last-child {
+          border-bottom: 1px solid #e9eaea;
+        }
+
+        table {
+          margin-bottom: 20px;
+        }
+
+        tr th {
+          padding-left: 15px;
+        }
+
+        tr:last-child td {
+          padding-bottom: 20px;
+        }
+
+        tr td {
+          color: #333;
+          font-size: 14px;
+          padding: 12px 0px 12px 15px;
+          max-width: 260px;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+        }
+
+        tr td:nth-child(1) {
+          font-weight: bold;
+        }
+
+        tr td:nth-child(2) {
+          color: #34b0ea;
+        }
+
+        tr td a {
+          font-weight: bold;
+          border-bottom: 1px dashed #34b0ea;
+        }
+
+        tr td a:hover {
+          text-decoration: none;
+          border-bottom: none;
+        }
+
+        > a {
+          margin-left: 15px;
+          font-size: 13px;
+        }
+      }
+
+      .right {
+        float: right;
+        width: 125px;
+        margin: 50px 80px 0 0;
+        text-align: center;
+
+        > a {
+          background: url(../images/ico-comments.png) no-repeat left center;
+          padding: 0 0 0 20px;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+
+.airlines .title h2,
+.planes .title h2,
+.airports .title h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.airlines .buttons,
+.planes .buttons,
+.airports .buttons {
+  margin-bottom: 30px;
+
+  button {
+    margin-right: -5px;
+    padding: 11px 19px;
+    cursor: pointer;
+
+    &:not(.active) {
+      border: 1px solid #c0c0c0;
+      border-bottom: 1px solid #d8d8d8;
+    }
+
+    &:hover:not(.active) {
+      background: #e0e1e1;
+    }
+
+    &.active span {
+      color: #eee;
+    }
+
+    span {
+      color: #999;
+    }
+  }
+}
+
+
+.airlines .stars {
+  width: 110px;
+  background: url(../images/ico-star-big.png) repeat-x;
+  margin: 0 auto 15px;
+}
+
+  .airlines .stars .inner {
+    height: 18px;
+    background: #fff url(../images/ico-star-big-gold.png) repeat-x;
+  }
+
+  .airlines .stars .s0 {
+    background: none;
+  }
+
+  .airlines .stars .s1 {
+    width: 22px;
+  }
+
+  .airlines .stars .s2 {
+    width: 44px;
+  }
+
+  .airlines .stars .s3 {
+    width: 66px;
+  }
+
+  .airlines .stars .s4 {
+    width: 88px;
+  }
+
+  .airlines .stars .s5 {
+    width: 110px;
+  }
+
+.item-view {
+
+}
+
+  .item-view .left {
+    width: 235px;
+    float: left;
+    text-align: center;
+  }
+
+    .item-view .left img {
+      margin: 45px 0 50px 0;
+    }
+
+    .item-view .left > .stars {
+      margin-bottom: 25px;
+    }
+
+    .item-view .left .criteria {
+      color: #999;
+      font-size: 12px;
+      float: left;
+      margin-bottom: 9px;
+    }
+
+      .item-view .left .criteria p {
+        float: left;
+        margin: 0;
+      }
+
+    .item-view .left .criteria .stars {
+      width: 75px;
+      margin: 0 10px 0 0;
+      background: url(../images/stars-gray.png) repeat-x;
+      float: left;
+    }
+      .item-view .left .criteria .stars .inner {
+        height: 12px;
+        background: #fff url(../images/stars-gold.png) repeat-x;
+      }
+      .item-view .left .criteria .stars .s0 {
+        background: none;
+      }
+      .item-view .left .criteria .stars .s1 {
+        width: 15px;
+      }
+      .item-view .left .criteria .stars .s2 {
+        width: 30px;
+      }
+      .item-view .left .criteria .stars .s3 {
+        width: 45px;
+      }
+      .item-view .left .criteria .stars .s4 {
+        width: 60px;
+      }
+      .item-view .left .criteria .stars .s5 {
+        width: 75px;
+      }
+
+    .item-view .left > a {
+      background: url(../images/ico-comments.png) no-repeat left center;
+      padding: 0 0 0 20px;
+      margin-top: 15px;
+      font-size: 13px;
+      float: left;
+    }
+
+  .item-view .right {
+    width: 680px;
+    float: right;
+
+    .desc {
+      color: #666;
+      line-height: 19px;
+      margin-bottom: 30px;
+    }
+
+    .contact {
+      background: url(../images/ico-contact.png) no-repeat left center;
+      padding: 0 0 3px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #333;
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    .contact-item {
+      margin-bottom: 25px;
+
+      i {
+        display: block;
+        margin-bottom: 6px;
+        color: #666;
+        font-size: 13px;
+      }
+
+      a {
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+      strong {
+        line-height: 20px;
+      }
+    }
+
+    .planes {
+      span {
+        background: url(../images/ico-plane-green.png) no-repeat left center;
+        padding: 0 0 2px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #333;
+        display: block;
+        margin-bottom: 20px;
+      }
+
+      ul {
+        -webkit-padding-start: 0;
+        -webkit-margin-before: 0;
+        list-style: none;
+        width: 460px;
+
+        li {
+          color: #333;
+          line-height: 24px;
+          font-size: 13px;
+          display: inline-block;
+          margin-right: 20px;
+          width: 130px;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+
+.airlines-specials {
+  table {
+    font-size: 16px;
+
+    tr:first-child {
+      border-bottom: 1px solid #ccc;
+
+      th {
+        font-size: 16px;
+        padding: 20px 15px;
+      }
+    }
+
+    tr:not(:first-child):hover {
+      background: #eee;
+    }
+
+    td {
+      padding: 20px 15px;
+      color: #333;
+
+      a {
+        border-bottom: 1px dashed #34B0EA;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.airlines-loyalty {
+  .item {
+    margin-bottom: 40px;
+
+    h5 {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 13px;
+      line-height: 19px;
+      color: #333;
+    }
+  }
+}
+
+.planes,
+.airports {
+  .buttons {
+    margin-bottom: 35px;
+  }
+
+  .item-view {
+    .left {
+      text-align: left;
+      
+      img {
+        margin: 0 0 20px;
+        border-radius: 5px;
+      }
+
+      span {
+        font-size: 13px;
+        color: #666;
+        font-style: italic;
+        display: block;
+
+        strong {
+          font-style: normal;
+          color: #333;
+          text-decoration: none;
+          
+          &.big {
+            font-size: 24px;
+            padding-left: 5px;
+          }
+        }
+
+        &.rating {
+          margin-bottom: 15px;
+        }
+
+        &.distance {
+          margin-bottom: 7px;
+        }
+      }
+    }
+
+    .right {
+      .desc {
+        margin-top: 0;
+      }
+
+      .use {
+        background: url(../images/ico-plane.png) no-repeat left center;
+        padding: 0 0 3px 27px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #333;
+        display: block;
+        margin-bottom: 20px;
+      }
+
+      .companies {
+        ul {
+          -webkit-margin-before: 0;
+          -webkit-padding-start: 0;
+          list-style: none;
+          width: 285px;
+
+          li {
+            display: inline-block;
+            width: 125px;
+            margin-right: 15px;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .items-list {
+    li {
+      .right {
+        text-align: left;
+        width: 170px;
+
+        .rating {
+          font-size: 13px;
+          color: #666;
+          font-style: italic;
+          display: block;
+          margin-bottom: 10px;
+
+          strong {
+            font-style: normal;
+            color: #333;
+            text-decoration: none;
+            font-size: 24px;
+            padding-left: 5px;
+          }
+        }
+        
+        a {
+          display: block;
+          margin-bottom: 8px;
+        }
+
+        .comments {
+          background-image: url(../images/ico-comments.png);
+        }
+
+        .experts {
+          background-image: url(../images/ico-user.png);
+        }
+
+        .photos {
+          background-image: url(../images/ico-photo.png);
+        }
+
+        .videos {
+          background-image: url(../images/ico-video.png);
+        }
+      }
+    }
+  }
+
+  .experts-opinions {
+    list-style: none;
+
+    li {
+      display: block;
+      margin-bottom: 30px;
+
+      img {
+        float: left;
+        border-radius: 3px;
+        margin-right: 30px;
+      }
+    }
+
+    div {
+      position: relative;
+      width: 645px;
+      padding: 20px 30px;
+      background: #fbfbfb;
+      border: 1px solid #e5e5e5;
+      float: left;
+      border-radius: 3px;
+
+      h5 {
+        font-size: 13px;
+        color: #333;
+        margin: 0 0 3px;
+      }
+
+      i {
+        font-size: 13px;
+        color: #666;
+        display: block;
+        margin-bottom: 9px;
+      }
+
+      p {
+        font-size: 13px;
+        color: #666;
+        line-height: 18px;
+        margin-bottom: 0;
+      }
+
+      ins {
+        display: block;
+        position: absolute;
+        width: 10px;
+        height: 19px;
+        left: -10px;
+        top: 20px;
+        background: url(../images/ico-triangle-opinions.png);
+      }
+    }
+  }
+
+  .plane-videos {
+    list-style: none;
+
+    li {
+      display: block;
+      float: left;
+      width: 300px;
+      margin: 0 15px 20px 0;
+
+      h5 {
+        font-size: 16px;
+        color: #333;
+        margin: 0 0 15px;
+      }
+
+      div {
+        width: 300px;
+        height: 200px;
+        position: relative;
+
+        img {
+          border-radius: 4px;
+        }
+
+        a {
+          position: absolute;
+          display: block;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background: url(../images/btn-play.png) no-repeat center center;
+
+          &:hover {
+            background: url(../images/btn-play-hover.png) no-repeat center center;
+          }
+        }
+      }
+
+      p {
+        font-size: 13px;
+        color: #666;
+        display: block;
+        padding-left: 5px;
+      }
+
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .techs {
+    .item {
+      margin-bottom: 20px;
+
+      h5 {
+        font-size: 18px;
+        margin: 0 0 10px;
+      }
+
+      p {
+        margin: 0 0 5px;
+      }
+    }
+  }
+}
+
+.airports {
+  .filter {
+    p {
+      display: inline-block;
+      margin-right: 10px;
+    }
+  }
+
+  .items-list {
+    li {
+      .center {
+        p {
+          padding-right: 20px;
+        }
+      }
+
+      .right {
+        width: 185px;
+
+        span {
+          font-size: 13px;
+          color: #666;
+          font-style: italic;
+          display: block;
+          margin-bottom: 10px;
+
+          .big {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+
+  .item-view {
+    .left {
+      .distance {
+        .big {
+          font-size: 13px;
+        }
+      }
+
+      p {
+        color: #333;
+        font-size: 13px;
+        line-height: 18px;
+      }
+
+      a {
+        display: block;
+        float: none;
+      }
+
+      a:not(.comments) {
+        display: block;
+        background: none;
+        padding-left: 0;
+      }
+    }
+
+    .right {
+      .item {
+        margin-bottom: 20px;
+
+        i {
+          font-size: 13px;
+          color: #666;
+          display: block;
+          margin-bottom: 7px;
+        }
+
+        p {
+          margin: 0;
+          display: block;
+          line-height: 20px;
+          font-size: 13px;
+          color: #333;
+        }
+      }
+    }
+  }
+
+  .table-board {
+    text-align: center;
+
+    .board {
+      margin-bottom: 30px;
+
+      td, th {
+        padding: 15px;
+        text-align: left;
+      }
+
+      tr:nth-child(1) th {
+        padding-bottom: 0;
+      }
+
+      tr:nth-child(2) th {
+        border-bottom: 1px solid #bec1c2;
+        padding-top: 5px;
+      }
+
+      tr td {
+        border-bottom: 1px solid #e9eaea;
+        font-size: 14px;
+      }
+
+      tr:nth-child(2) th {
+        font-size: 11px;
+      }
+
+      .waiting {
+        color: #fba81c;
+        font-weight: bold;
+
+        strong {
+          color: #333; 
+        }
+      }
+
+      .cancel {
+        color: #eb413c;
+        font-weight: bold;
+      }
+    }
+
+    .more {
+      background: url(../images/refresh.png) no-repeat left center;
+      padding: 3px 0 2px 30px;
+      text-decoration: none;
+    }
+  }
+}
+
+.faq {
+  .left {
+    width: 282px;
+    float: left;
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        height: 100px;
+        width: 279px;
+        cursor: pointer;
+        position: relative;
+        display: table;
+        overflow: hidden;
+
+        div {
+          padding: 0 0 0 70px;
+          display: table-cell;
+          vertical-align: middle;
+          
+          h3 {
+            width: 165px;
+            margin: 0 0 3px;
+          }
+
+          p {
+            margin: 0;
+            color: #828282;
+            font-size: 13px;
+            width: 165px;
+          }
+        }
+
+        i {
+          position: absolute;
+          display: block;
+          top: 28px;
+          left: 15px;
+          width: 45px;
+          height: 45px;
+          border-radius: 50%;
+          background-color: #ffa913;
+          background-position: center center;
+          background-repeat: no-repeat;
+
+          &.faq-icon-calendar {
+            background-image: url('../static/faq-icon-calendar.png');
+          }
+
+          &.faq-icon-ticket {
+            background-image: url('../static/faq-icon-ticket.png');
+          }
+
+          &.faq-icon-refresh {
+            background-image: url('../static/faq-icon-refresh.png');
+          }
+        }
+
+        &.active {
+          background: url(../images/bg-faq-menu-active.png) no-repeat;
+        }
+      }
+    }
+  }
+
+  .right {
+    width: 635px;
+    float: right;
+    margin-top: 15px;
+
+    .item {
+      margin-bottom: 15px;
+
+      a {
+        font-size: 22px;
+        font-weight: bold;
+        border-bottom: 1px dashed #34b0ec;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
+      .answer {
+        display: none;
+
+        p {
+          font-size: 13px;
+          color: #8e8e8e;
+        }
+      }
+
+      &.active {
+        a {
+          color: #000;
+          border-color: #000;
+        }
+      }
+    }
+  }
+}
+
+.profile-info {
+  height: 90px;
+
+  .left {
+    float: left;
+
+    img {
+      float: left;
+      margin: 8px 10px 0 0;
+      border-radius: 3px;
+    }
+
+    h4 {
+      -webkit-margin-before: 0;
+      -webkit-margin-after: 0;
+      margin: 10px 0 5px 0;
+      font-size: 16px;
+      color: #333;
+      width: 390px;
+
+      a {
+        font-size: 11px;
+        font-weight: normal;
+        border-bottom: 1px dashed #34b0ea;
+        margin-left: 10px;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+
+    .email {
+      color: #34b0ea;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    p {
+      font-weight: bold;
+      margin: 1px 0 0;
+      color: rgba(51, 51, 51, 0.6);
+      font-size: 13px;
+    }
+  }
+
+  .right {
+    float: right;
+
+    img {
+      float: right;
+      margin: 6px 0 0 0;
+    }
+
+    div {
+      float: right;
+      width: 100px;
+      margin-top: 2px;
+
+      p {
+       font-size: 13px;
+       color: #333;
+       margin-bottom: 3px;
+
+       strong {
+        display: block;
+        line-height: 14px;
+       }
+      }
+
+      a {
+        font-size: 11px;
+        font-weight: bold;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.profile,
+.flight-map {
+  h2 {
+    font-size: 16px;
+    color: #333;
+    margin: 18px 0 0 0;
+  }
+
+  .found-tickets {
+    margin: 15px 0 30px;
+    .ticket {
+      position: relative;
+      margin: 0;
+
+      .btn-cancel {
+        position: absolute;
+        right: -147px;
+        top: 20px;
+        font-size: 12px;
+        color: #FF0721;
+        font-weight: bold;
+        width: 90px;
+        background: url(../images/ico-cancel.png) no-repeat left center;
+        padding: 0 0 0 45px;
+      }
+
+      .information {
+        padding: 20px 40px 30px 0;
+      }
+
+      .info {
+        margin: 20px 30px 10px;
+
+        .booked {
+          float: left;
+          background: #ffa913;
+          padding: 8px 15px;
+          font-size: 14px;
+          color: #fff;
+          text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.2);
+          border-radius: 3px;
+          margin: 1px 30px 0 0;
+        }
+
+        p {
+          float: left;
+          margin: 10px 5px 0 0;
+          font-size: 12px;
+          color: #666;
+        }
+
+        .btn {
+          font-size: 13px;
+          color: #666;
+          padding: 9px 10px 9px 27px;
+          border: 1px solid #e5e5e5;
+          float: left;
+          background-repeat: no-repeat;
+          background-position: 8px 10px;
+
+          &.print {
+            background-image: url(../images/ico-print.png);
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+          }
+
+          &.download {
+            background-image: url(../images/ico-download.png);
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+            border-left: none;
+            margin-right: 30px;
+          }
+        }
+
+        .pay {
+          font-size: 12px;
+          border-bottom: 1px dashed @link;
+          margin-top: 10px;
+          float: left;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+  table.history {
+    margin-bottom: 40px;
+
+    tr:first-child {
+      border-bottom: 1px solid #EAEAEA;
+    }
+
+    th,
+    td {
+      padding: 15px 20px;
+    }
+
+    td {
+      font-size: 14px;
+      color: #666;
+
+      strong {
+        color: #333;
+        line-height: 14px;
+
+        i {
+          display: inline-block;
+          width: 19px;
+          height: 17px;
+          margin: 0 5px -4px 7px;
+        }
+      }
+
+      a {
+        font-style: italic;
+        font-size: 11px;
+        border-bottom: 1px dashed @link;
+        margin-left: 5px;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.flight-map {
+  h1 {
+    float: left;
+  }
+
+  .add-flight {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    color: #333;
+    float: right;
+    background-image: linear-gradient(bottom, rgb(245,245,245) 24%, rgb(255,255,255) 72%);
+    background-image: -o-linear-gradient(bottom, rgb(245,245,245) 24%, rgb(255,255,255) 72%);
+    background-image: -moz-linear-gradient(bottom, rgb(245,245,245) 24%, rgb(255,255,255) 72%);
+    background-image: -webkit-linear-gradient(bottom, rgb(245,245,245) 24%, rgb(255,255,255) 72%);
+    background-image: -ms-linear-gradient(bottom, rgb(245,245,245) 24%, rgb(255,255,255) 72%);
+    background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      color-stop(0.24, rgb(245,245,245)),
+      color-stop(0.72, rgb(255,255,255))
+    );
+    padding: 7px 10px;
+    border-top: 1px solid #c0c0c0;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #d8d8d8;
+    border-radius: 3px;
+    margin: 16px 20px 0 0;
+
+    span {
+      background: url(../images/ico-plus-dark.png) no-repeat left center;
+      padding-left: 20px;
+    }
+  }
+
+  .map {
+    border-radius: 3px;
+    margin: 10px 0 40px;
+    float: left;
+  }
+
+  .stat {
+    float: right;
+    width: 200px;
+    height: 301px;
+    padding: 19px;
+    background: #fbfbfb;
+    border: 1px solid #f2f2f2;
+    border-radius: 3px;
+    margin: 9px 0 40px;
+    position: relative;
+
+    .social {
+      position: absolute;
+      bottom: 20px;
+
+      strong {
+        font-size: 13px;
+        float: left;
+        margin-right: 7px;
+        color: #333; 
+      }
+
+      a {
+        display: block;
+        float: left;
+        margin-right: 5px;
+        width: 16px;
+        height: 16px;
+
+        &.twitter {
+          background: url(../images/ico-twitter.png);
+        }
+
+        &.facebook {
+          background: url(../images/ico-facebook.png);
+        }
+
+        &.vkontakte {
+          background: url(../images/ico-vk.png);
+        }
+      }
+    }
+
+    h4 {
+      font-size: 16px;
+      margin: 0 0 10px;
+    }
+
+    p {
+      font-style: italic;
+      font-size: 12px;
+      color: #666;
+      line-height: 18px;
+      margin: 0 0 6px;
+
+      strong {
+        font-style: normal;
+        font-size: 13px;
+        color: #333;
+        padding-left: 2px;
+      }
+    }
+  }
+
+  table.history {
+
+    td {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+
+    .delete {
+      display: block;
+      width: 8px;
+      height: 8px;
+      background: url(../images/ico-delete.png) no-repeat;
+      border-bottom: none;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}

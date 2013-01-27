@@ -4,8 +4,6 @@
     <title></title>
     <link rel="stylesheet" href="css/all.css" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/expander.js"></script>
 </head>
 <body>
   <header>
@@ -64,12 +62,22 @@
       <div class="found-tickets">
         <div class="ticket">
           <a href="#" class="btn-cancel">Отменить бронирование</a>
+          <div class="info">
+            <span class="booked">Забронирован</span>
+            <p>Квитанция на оплату:</p>
+            <a href="#" class="btn print">Распечатать</a>
+            <a href="#" class="btn download">Скачать</a>
+            <a href="#" class="pay">Как оплатить?</a>
+
+            <del class="clr"></del>
+          </div>
           <div class="dtc company">
             <div class="logo klm"></div>
             <div class="stars">
               <div class="inner s4"></div>
             </div>
             <b>18476 грн</b>
+            <del class="clr"></del>
             <a href="#" class="shortcut micro">2 взрослых</a>
           </div>
           <div class="dtc information">
@@ -123,7 +131,45 @@
           </div>
         </div>
       </div>
-      
+
+      <h2>История заказов</h2>
+      <table class="history">
+        <tr>
+          <th>Дата</th>
+          <th>Рейс</th>
+          <th>Маршрут</th>
+          <th>Авиакомпания</th>
+          <th>Самолёт</th>
+        </tr>
+        <tr>
+          <td>28 августа 2011</td>
+          <td>KL 1386</td>
+          <td><strong>Лондон <i class="icon-airplane"></i> Киев</strong></td>
+          <td>Аэрофлот <a href="#">Оставить отзыв</a></td>
+          <td>Boeing 737-800 <a href="#">Оставить отзыв</a></td>
+        </tr>
+        <tr>
+          <td>28 августа 2011</td>
+          <td>KL 1386</td>
+          <td><strong>Лондон <i class="icon-airplane"></i> Киев</strong></td>
+          <td>Аэрофлот <a href="#">Оставить отзыв</a></td>
+          <td>Boeing 737-800 <a href="#">Оставить отзыв</a></td>
+        </tr>
+        <tr>
+          <td>28 августа 2011</td>
+          <td>KL 1386</td>
+          <td><strong>Амстердам <i class="icon-airplane"></i> Киев</strong></td>
+          <td>Аэрофлот <a href="#">Оставить отзыв</a></td>
+          <td>Boeing 737-800 <a href="#">Оставить отзыв</a></td>
+        </tr>
+        <tr>
+          <td>28 августа 2011</td>
+          <td>KL 1386</td>
+          <td><strong>Лондон <i class="icon-airplane"></i> Киев</strong></td>
+          <td>Аэрофлот <a href="#">Оставить отзыв</a></td>
+          <td>Boeing 737-800 <a href="#">Оставить отзыв</a></td>
+        </tr>
+      </table>
     </div>
   </section>
 
